@@ -3,24 +3,23 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="css/product-card.css">
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 	<title>Loft Мебель</title>
 </head>
-<body>
+<body class="page">
+  <div class="wrapper">
+
   <!-- header start -->
-  <header class="header">
+  <header class="page__header header">
 
       <div class="header__logo logo">
-        <a href="#" class="intro__logo-link" aria-label="Логотип">
-          <img src="Images/Logo/LOGO.svg" class="intro__logo-pic" alt="logo">
+        <a href="#" class="header__logo-link" aria-label="Логотип">
+          <img src="Images/Logo/LOGO.svg" class="header__logo-pic" alt="logo">
         </a>
       </div>
 
       <nav class="header__navigation nav">
 
-        <ul class="nav__list-left">
+        <ul class="nav__list-main">
           <li class="nav__item">
             <a href="#" class="nav__link" aria-label="Главная">Главная</a>
           </li>
@@ -31,60 +30,62 @@
             <a href="#" class="nav__link" aria-label="Контакты">Контакты</a>
           </li>
         </ul>
+      </nav>
 
-        <div class="header__search">
-          <form action="#" class="search-form" method="get">
+        <div class="header__search-container">
+          <form action="#" class="header__search-form search-form" method="get">
             <input type="search" class="search-form__field" placeholder="Поиск">
             <button type="submit" class="search-form__button" aria-label="Search product"></button>
           </form>
         </div>
 
-        <ul class="nav__list-right">
-          <li class="nav__item">
-            <a href="#" class="nav__link" aria-label="Связаться с нами">
-              <img src="Images/Svg/phone-card.svg" class="nav__pic" alt="Telephone Number">
-                <span class="info">8(964)89 99 119</span>
-            </a>
-          </li>
-          <li class="nav__item">
-            <a href="#" class="nav__link" aria-label="Доставка">
-              <img src="Images/Svg/delivery-card.svg" class="nav__pic" alt="Delivery">
-                <span class="delivery">Доставка</span>
-            </a>
-          </li>
-          <li class="nav__item">
-            <a href="#" class="user__bar-icon">
-              <img src="Images/Svg/wishlist.svg" alt="whishlist"></a>
-          </li>
-          <li class="nav__item">
-            <a href="#" class="user__bar-icon">
-              <img src="Images/Svg/bag.svg" alt="bag"></a>
-          </li>
-          <li class="nav__item">
-            <a href="#" class="user__bar-icon">
-              <img src="Images/Svg/profile.svg" alt="profile"></a>
-          </li>
-        </ul>
-      </nav>
+        <div class="info__links">
+          <ul class="info__links-list">
+            <li class="info__links-item">
+              <a href="#" class="info__links-link" aria-label="Связаться с нами">
+                <img src="Images/Svg/phone-card.svg" class="info__links-pic" alt="Telephone Number">
+                  <span class="info">8(964)89 99 119</span>
+              </a>
+            </li>
+            <li class="info__links-item">
+              <a href="#" class="info__links-link" aria-label="Доставка">
+                <img src="Images/Svg/delivery-card.svg" class="info__links-pic" alt="Delivery">
+                  <span class="delivery">Доставка</span>
+              </a>
+            </li>
+            <li class="info__links-item">
+              <a href="#" class="info__links-link">
+                <img src="Images/Svg/wishlist.svg" class="info__links-pic" alt="whishlist"></a>
+            </li>
+            <li class="info__links-item">
+              <a href="#" class="info__links-link">
+                <img src="Images/Svg/bag.svg" class="info__links-pic" alt="bag"></a>
+            </li>
+            <li class="info__links-item">
+              <a href="#" class="info__links-link">
+                <img src="Images/Svg/profile.svg" class="info__links-pic" alt="profile"></a>
+            </li>
+          </ul>
+        </div>
 
-      <div class="header__menu menu">
-      <div class="wrapper">
-        <ul class="header__menu-list">
-          <li class="header__menu-item"><a href="#" class="header__menu-link">Кухни</a></li>
-          <li class="header__menu-item"><a href="#" class="header__menu-link">Спальни</a></li>
-          <li class="header__menu-item"><a href="#" class="header__menu-link">Гомстинные</a></li>
-          <li class="header__menu-item"><a href="#" class="header__menu-link">Прихожие</a></li>
-          <li class="header__menu-item"><a href="#" class="header__menu-link">Офисная мебель</a></li>
-          <li class="header__menu-item"><a href="#" class="header__menu-link">Детская</a></li>
-          <li class="header__menu-item"><a href="#" class="header__menu-link">Акция</a></li>
-      </ul>
-      </div> <!-- wrapper end -->
+      <div class="header__catalog catalog">
+        <ul class="header__catalog-list">
+          <li class="header__catalog-item"><a href="#" class="header__catalog-link">Кухни</a></li>
+          <li class="header__catalog-item"><a href="#" class="header__catalog-link">Спальни</a></li>
+          <li class="header__catalog-item"><a href="#" class="header__catalog-link">Гомстинные</a></li>
+          <li class="header__catalog-item"><a href="#" class="header__catalog-link">Прихожие</a></li>
+          <li class="header__catalog-item"><a href="#" class="header__catalog-link">Офисная мебель</a></li>
+          <li class="header__catalog-item"><a href="#" class="header__catalog-link">Детская</a></li>
+          <li class="header__catalog-item"><a href="#" class="header__catalog-link">Акция</a></li>
+        </ul>
       </div>
 
   </header> <!-- header end -->
   <main>
 
+
   </main>
+  </div>    <!-- wrapper end -->
   <footer>
 
 
