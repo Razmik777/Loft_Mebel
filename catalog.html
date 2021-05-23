@@ -81,14 +81,272 @@
       </div>
 
   </header> <!-- header end -->
-  <main>
+  <main class="page__main main">
 
+    <nav class="main__navigation navigation">
+      <a href="main.html" class="main__navigation-link">Главная</a>
+      <a href="#" class="main__navigation-link">Гостинные</a>
+      <a href="#" class="main__navigation-link">Мягкая мебель</a>
+      <a href="#" class="main__navigation-link">Диваны</a>
+    </nav>
+
+    <div class="main__filter">
+      <span class="main__filter-text">Раздел</span>
+      <ul class="main__filter-list">
+        <li class="main_filter-item">Гостинные</li>
+        <li class="main_filter-item">Мягкая мебель</li>
+        <li class="main_filter-item">Диваны</li>
+      </ul>
+
+      <div class="main__filter-price">
+        <label for="price">Цена</label>
+        <input type="range" id="price" name="цена" min="2000" max="102000" step="1" value="2000">
+        <span class="min__price">2000р</span>
+        <span class="max__price">102000р</span>
+      </div>
+
+      <div class="main__filter-checkbox">
+
+        <div class="checkbox__color">
+          <span class="color-text">Цвет</span>
+          <label class="check__color">
+            <input type="checkbox" class="check__red">
+          </label>
+          <label class="check__color">
+            <input type="checkbox" class="check__green">
+          </label>
+          <label class="check__color">
+            <input type="checkbox" class="check__white">
+          </label>
+          <label class="check__color">
+            <input type="checkbox" class="check__black">
+          </label>
+          <label class="check__color">
+            <input type="checkbox" class="check__grey">
+          </label>
+          <label class="check__color">
+            <input type="checkbox" class="check__brown">
+          </label>
+        </div>
+
+        <div class="checkbox__brand">
+          <label class="check__brand option">
+            <input type="checkbox"  class="check__type">
+            Динс
+          </label>
+          <label class="check__brand option">
+            <input type="checkbox" checked class="check__type">
+            Кускен
+          </label>
+          <label class="check__brand option">
+            <input type="checkbox"  class="check__type">
+            Эби
+          </label>
+          <label class="check__brand option">
+            <input type="checkbox"  class="check__type">
+            Реджио
+          </label>
+          <label class="check__brand option">
+            <input type="checkbox"  class="check__type">
+            Сайле
+          </label>
+
+          <a href="#" class="brand__link">Показать еще</a>
+        </div>
+
+      </div>
+    </div>
+
+    <section class="main__products products">
+      <h2 class="main__products-title hidden">Хиты продаж</h2>
+      <ul class="main__products-list">
+        <li class="products__item">
+          <a href="#"><img src="Images/Products/5.png" class="products__img" alt="Шерона Barhat Grey" width="200" height="150">
+          <div class="item__descr">
+            <h2 class="item__title">Шерона Barhat Grey</h2>
+            <span class="item__text">Двухспальные кровати</span>
+            <span class="item__price">21 990₽</span>
+          </div></a>
+        </li>
+        <li class="products__item">
+          <a href="#"><img src="Images/Products/6.png" class="products__img" alt="Авиньон-1" width="200" height="150">
+          <div class="item__descr">
+            <h2 class="item__title">Авиньон-1</h2>
+            <span class="item__text">Буфеты</span>
+            <span class="item__price">18 990₽</span>
+          </div></a>
+        </li>
+        <li class="products__item">
+          <a href="#"><img src="Images/Products/7.png" class="products__img" alt="Стелла Дуб Сонома" width="200" height="150">
+          <div class="item__descr">
+            <h2 class="item__title">Стелла Дуб Сонома</h2>
+            <span class="item__text">Комоды</span>
+            <span class="item__price">8 990₽</span>
+          </div></a>
+        </li>
+        <li class="products__item">
+          <a href="#"><img src="Images/Products/9.png" class="products__img" alt="Бенфлит Grey" width="200" height="150">
+          <div class="item__descr">
+            <h2 class="item__title">Бенфлит Grey</h2>
+            <span class="item__text">Журнальные столы</span>
+            <span class="item__price">7 290₽</span>
+          </div></a>
+        </li>
+        <li class="products__item">
+          <a href="#"><img src="Images/Products/10.png" class="products__img" alt="Тиффани Вудлайн Крем" width="200" height="150">
+          <div class="item__descr">
+            <h2 class="item__title">Тиффани Вудлайн Крем</h2>
+            <span class="item__text">Письменные столы</span>
+            <span class="item__price">10 990₽</span>
+          </div></a>
+        </li>
+        <li class="products__item">
+          <a href="#"><img src="Images/Products/11.png" class="products__img" alt="Валенсия Beige" width="200" height="150">
+          <div class="item__descr">
+            <h2 class="item__title">Валенсия Beige</h2>
+            <span class="item__text">Шкафы</span>
+            <span class="item__price">19 990₽</span>
+          </div></a>
+        </li>
+        <li class="products__item">
+          <a href="#"><img src="Images/Products/13.png" class="products__img" alt="Вилли Pink" width="200" height="150">
+          <div class="item__descr">
+            <h2 class="item__title">Вилли Pink</h2>
+            <span class="item__text">Детский диван</span>
+            <span class="item__price">21 990₽</span>
+          </div></a>
+        </li>
+        <li class="products__item">
+          <a href="#"><img src="Images/Products/14.png" class="products__img" alt="Сан-Паулу Velvet Brown" width="200" height="150">
+          <div class="item__descr">
+            <h2 class="item__title">Сан-Паулу Velvet Brown</h2>
+            <span class="item__text">Барные стулья</span>
+            <span class="item__price">25 990₽</span>
+          </div></a>
+        </li>
+        <li class="products__item">
+          <a href="#"><img src="Images/Products/15.png" class="products__img" alt="Валенсия Beige" width="200" height="150">
+          <div class="item__descr">
+            <h2 class="item__title">Валенсия Beige</h2>
+            <span class="item__text">Барные стулья</span>
+            <span class="item__price">10 990₽</span>
+          </div></a>
+        </li>
+        <li class="products__item">
+          <a href="#"><img src="Images/Products/5.png" class="products__img" alt="Шерона Barhat Grey" width="200" height="150">
+          <div class="item__descr">
+            <h2 class="item__title">Шерона Barhat Grey</h2>
+            <span class="item__text">Двухспальные кровати</span>
+            <span class="item__price">21 990₽</span>
+          </div></a>
+        </li>
+        <li class="products__item">
+          <a href="#"><img src="Images/Products/6.png" class="products__img" alt="Авиньон-1" width="200" height="150">
+          <div class="item__descr">
+            <h2 class="item__title">Авиньон-1</h2>
+            <span class="item__text">Буфеты</span>
+            <span class="item__price">18 990₽</span>
+          </div></a>
+        </li>
+        <li class="products__item">
+          <a href="#"><img src="Images/Products/7.png" class="products__img" alt="Стелла Дуб Сонома" width="200" height="150">
+          <div class="item__descr">
+            <h2 class="item__title">Стелла Дуб Сонома</h2>
+            <span class="item__text">Комоды</span>
+            <span class="item__price">8 990₽</span>
+          </div></a>
+        </li>
+        <li class="products__item">
+          <a href="#"><img src="Images/Products/9.png" class="products__img" alt="Бенфлит Grey" width="200" height="150">
+          <div class="item__descr">
+            <h2 class="item__title">Бенфлит Grey</h2>
+            <span class="item__text">Журнальные столы</span>
+            <span class="item__price">7 290₽</span>
+          </div></a>
+        </li>
+        <li class="products__item">
+          <a href="#"><img src="Images/Products/10.png" class="products__img" alt="Тиффани Вудлайн Крем" width="200" height="150">
+          <div class="item__descr">
+            <h2 class="item__title">Тиффани Вудлайн Крем</h2>
+            <span class="item__text">Письменные столы</span>
+            <span class="item__price">10 990₽</span>
+          </div></a>
+        </li>
+        <li class="products__item">
+          <a href="#"><img src="Images/Products/11.png" class="products__img" alt="Валенсия Beige" width="200" height="150">
+          <div class="item__descr">
+            <h2 class="item__title">Валенсия Beige</h2>
+            <span class="item__text">Шкафы</span>
+            <span class="item__price">19 990₽</span>
+          </div></a>
+        </li>
+        <li class="products__item">
+          <a href="#"><img src="Images/Products/13.png" class="products__img" alt="Вилли Pink" width="200" height="150">
+          <div class="item__descr">
+            <h2 class="item__title">Вилли Pink</h2>
+            <span class="item__text">Детский диван</span>
+            <span class="item__price">21 990₽</span>
+          </div></a>
+        </li>
+        <li class="products__item">
+          <a href="#"><img src="Images/Products/14.png" class="products__img" alt="Сан-Паулу Velvet Brown" width="200" height="150">
+          <div class="item__descr">
+            <h2 class="item__title">Сан-Паулу Velvet Brown</h2>
+            <span class="item__text">Барные стулья</span>
+            <span class="item__price">25 990₽</span>
+          </div></a>
+        </li>
+        <li class="products__item">
+          <a href="#"><img src="Images/Products/15.png" class="products__img" alt="Валенсия Beige" width="200" height="150">
+          <div class="item__descr">
+            <h2 class="item__title">Валенсия Beige</h2>
+            <span class="item__text">Барные стулья</span>
+            <span class="item__price">10 990₽</span>
+          </div></a>
+        </li>
+      </ul>
+    </section>  <!-- main__products products end -->
 
   </main>
   </div>    <!-- wrapper end -->
-  <footer>
+  <footer class="page__footer footer">
+    <div class="footer__nav">
+      <h3 class="footer__text">Навигация</h3>
 
+      <ul class="footer__list">
+        <li><a class="footer__link" href="#">Кухни</a></li>
+        <li><a class="footer__link" href="#">Спальни</a></li>
+        <li><a class="footer__link" href="#">Гостинные</a></li>
+      </ul>
 
+      <ul class="footer__list">
+        <li><a class="footer__link" href="#">Прихожие</a></li>
+        <li><a class="footer__link" href="#">Офисная мебель</a></li>
+        <li><a class="footer__link" href="#">Детская</a></li>
+      </ul>
+
+      <ul class="footer__list">
+        <li><a class="footer__link" href="#">Шкафы</a></li>
+        <li><a class="footer__link" href="#">Матрасы</a></li>
+        <li><a class="footer__link" href="#">Мягкая мебель</a></li>
+      </ul>
+
+      <ul class="footer__list">
+        <li><a class="footer__link" href="#">Акция</a></li>
+        <li><a class="footer__link" href="#">Новинки</a></li>
+      </ul>
+
+      <div class="footer__info">
+        <img src="Images/Logo/footer-logo.svg" alt="footer-logo">
+        <address class="footer__address">г. Анапа, Анапское шоссе,30 Ж/К Черное море
+        </address>
+        <ul class="info__list">
+          <li><a href="#" class="info__link--tel">8 (964) 89 99 119</a></li>
+          <li><a href="#" class="info__link--insta">INSTAGRAM</a></li>
+          <li><a href="mailto#" class="info__link--mail">mebel_loft_anapa@mail.ru</a></li>
+        </ul>
+      </div>
+    </div>
   </footer>
 </body>
 </html>
