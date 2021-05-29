@@ -52,15 +52,6 @@ function cleandist() {
   return del('dist/**/*', { force: true })
 }
 
-function buildcopy() {
-  return src([
-    'app/css/**/*.min.css'
-    'app/js/**/*.min.js'
-    'Images/dest/**/*'
-    '**/*.html'
-    ])
-  .pipe(dest('dist'));
-}
 
 function startwatch(){
   watch(styles);
@@ -74,6 +65,5 @@ exports.scripts     = scripts;
 exports.styles      = styles;
 exports.images      = images;
 exports.cleanimg    = cleanimg;
-exports.build       = series(cleandist, styles, scripts, images, buildcopy);
 
 exports.default     = parallel(styles, scripts, browsersync, startwatch);
