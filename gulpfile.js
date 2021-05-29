@@ -1,8 +1,11 @@
+let preprocessor = "sass";
+
 const { src, dest, parallel, series, watch } = require('gulp');
 const browserSync  = require('browser-sync').create();
 const concat       = require('gulp-concat');
 const uglify       = require('gulp-uglify-es').default;
 const sass         = require('gulp-sass');
+const less         = require('gulp-less');
 const autoprefixer = require('gulp-autoprefixer');
 const cleancss     = require('gulp-clean-css');
 const imagemin     = require('gulp-imagemin');
@@ -11,7 +14,9 @@ const del          = require('del');
 
 function browsersync() {
   browserSync.init({
-    server: { baseDir: 'app/'}
+    server: { baseDir: 'app/'},
+    notify: false,
+    online: true
   })
 }
 
@@ -28,36 +33,45 @@ function scripts() {
 }
 
 function styles() {
-  return src('app/sass/main.sass')
-  .pipe(sass())
+  return src('app/' + preprocessor + '/main.' + preprocessor + '')
+  .pipe(eval(preprocessor)())
   .pipe(concat('app.min.css'))
   .pipe(autoprefixer({ overrideBrowserslist: ['last 10 versions'], grid: true }))
-  .pipe(cleancss(( { level: {1: { specialComments: 0} }, format: 'beutify' })))
+  .pipe(cleancss(( { level: { 1: { specialComments: 0} }, format: 'beutify' })))
   .pipe(dest('app/css/'))
   .pipe(browserSync.stream())
 }
 
 function images() {
-  return src('Images/**/*')
-  .pipe(newer('images/dest/'))
+  return src('app/images/src/**/*')
+  .pipe(newer('app/images/dest/'))
   .pipe(imagemin())
-  .pipe(dest('images/dest/'))
+  .pipe(dest('app/images/dest/'))
 }
 
 function cleanimg() {
-  return del('images/dest/**/*', { force: true })
+  return del('app/images/dest/**/*', { force: true })
 }
 
 function cleandist() {
   return del('dist/**/*', { force: true })
 }
 
+function buildcopy() {
+  return src([
+    'app/css/**/*.min.css',
+    'app/js/**/*.min.js',
+    'app/Images/dest/**/',
+    'app/**/*.html',
+    ], { base : 'app'})
+   .pipe(dest('dist'));
+}
 
 function startwatch(){
-  watch(styles);
+  watch('app/**/' + preprocessor +'/**/*', styles);
   watch(['app/**/*.js', '!app/**/*.min.js'], scripts);
-  watch('app/**/*.html').on('change', browserSync.reload)
-  watch('images/**/*', images);
+  watch('app/**/*.html').on('change', browserSync.reload);
+  watch('app/images/**/*', images);
 }
 
 exports.browsersync = browsersync;
@@ -65,5 +79,6 @@ exports.scripts     = scripts;
 exports.styles      = styles;
 exports.images      = images;
 exports.cleanimg    = cleanimg;
+exports.build       = series(cleandist, styles, scripts, images, buildcopy);
 
 exports.default     = parallel(styles, scripts, browsersync, startwatch);
