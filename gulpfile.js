@@ -1,11 +1,10 @@
-let preprocessor = "sass";
+let preprocessor = "scss";
 
 const { src, dest, parallel, series, watch } = require('gulp');
 const browserSync  = require('browser-sync').create();
 const concat       = require('gulp-concat');
 const uglify       = require('gulp-uglify-es').default;
-const sass         = require('gulp-sass');
-const less         = require('gulp-less');
+const scss         = require('gulp-sass');
 const autoprefixer = require('gulp-autoprefixer');
 const cleancss     = require('gulp-clean-css');
 const imagemin     = require('gulp-imagemin');
@@ -22,10 +21,7 @@ function browsersync() {
 
 
 function scripts() {
-  return src([
-    'node_modules/jquery/dist/jquery.min.js',
-    'app/js/app.js',
-  ])
+  return src('app/js/app.js')
   .pipe(concat('app.min.js'))
   .pipe(uglify())
   .pipe(dest('app/js/'))
@@ -33,18 +29,18 @@ function scripts() {
 }
 
 function styles() {
-  return src('app/' + preprocessor + '/main.' + preprocessor + '')
+  return src('app/' + preprocessor + '/main.' + preprocessor + ' ', {"allowEmpty": true})
   .pipe(eval(preprocessor)())
   .pipe(concat('app.min.css'))
   .pipe(autoprefixer({ overrideBrowserslist: ['last 10 versions'], grid: true }))
-  .pipe(cleancss(( { level: { 1: { specialComments: 0} }, format: 'beutify' })))
+  .pipe(cleancss(( { level: { 1: { specialComments: 0 } }, format: 'beutify' })))
   .pipe(dest('app/css/'))
   .pipe(browserSync.stream())
 }
 
 function images() {
-  return src('app/images/src/**/*')
-  .pipe(newer('app/images/dest/'))
+  return src('app/images/**/*')
+  .pipe(newer('app/images/dest/*'))
   .pipe(imagemin())
   .pipe(dest('app/images/dest/'))
 }
@@ -68,7 +64,7 @@ function buildcopy() {
 }
 
 function startwatch(){
-  watch('app/**/' + preprocessor +'/**/*', styles);
+  watch('app/**/' + preprocessor + '/**/*', styles);
   watch(['app/**/*.js', '!app/**/*.min.js'], scripts);
   watch('app/**/*.html').on('change', browserSync.reload);
   watch('app/images/**/*', images);
@@ -81,4 +77,4 @@ exports.images      = images;
 exports.cleanimg    = cleanimg;
 exports.build       = series(cleandist, styles, scripts, images, buildcopy);
 
-exports.default     = parallel(styles, scripts, browsersync, startwatch);
+exports.start       = parallel(styles, scripts, browsersync, startwatch);
