@@ -1,0 +1,56 @@
+$main-font:'Roboto', 'Arial', sans-serif;
+
+$main-font-size: 16px;
+
+$main-line-height: 19px;
+
+$blackColor: #000000;
+
+$textColor: #414141;
+
+$greyColor:#c4c4c4;
+
+
+@mixin robotoBold{
+   font-family: $main-font;
+   font-size: $main-font-size;
+   line-height: $main-line-height;
+   font-weight: 700;
+}
+
+@mixin robotoBlack{
+   font-family: $main-font;
+   font-size: $main-font-size;
+   line-height: $main-line-height;
+   font-weight: 900;
+}
+
+@mixin robotoCondensed{
+   font-family: $main-font;
+   font-size: $main-font-size;
+   line-height: $main-line-height;
+   font-weight: 400;
+}
+
+@mixin robotoMedium{
+   font-family: $main-font;
+   font-size: $main-font-size;
+   line-height: $main-line-height;
+   font-weight: 600;
+}
+
+@mixin robotoMediumItalic{
+   font-family: $main-font;
+   font-size: $main-font-size;
+   line-height: $main-line-height;
+   font-weight: 600;
+   font-style: italic;
+}
+
+@mixin robotoRegular{
+   font-family: $main-font;
+   font-size: $main-font-size;
+   line-height: $main-line-height;
+   font-weight: 400;
+}
+
