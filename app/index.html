@@ -11,7 +11,7 @@
 
 	<!-- header start -->
   <header class="page__header header">
-
+    <div class="header__inner">
       <div class="header__logo logo">
         <a href="#" class="header__logo-link" aria-label="Логотип">
           <img src="Images/Logo/LOGO.svg" class="header__logo-pic" alt="logo">
@@ -22,10 +22,10 @@
 
         <ul class="nav__list-main">
           <li class="nav__item">
-            <a href="main.html" class="nav__link" aria-label="Главная">Главная</a>
+            <a href="index.html" class="nav__link" aria-label="Главная">Главная</a>
           </li>
           <li class="nav__item">
-            <a href="About_us.html" class="nav__link" aria-label="О Нас">О Нас</a>
+            <a href="About_us.html" class="nav__link" aria-label="О Нас">О нас</a>
           </li>
           <li class="nav__item">
             <a href="#" class="nav__link" aria-label="Контакты">Контакты</a>
@@ -35,8 +35,8 @@
 
         <div class="header__search-container">
           <form action="#" class="header__search-form search-form" method="get">
+            <button type="submit" class="search-form__button" aria-label="Search product"><img src="Images/Svg/search.svg" alt="Search"></button>
             <input type="search" class="search-form__field" placeholder="Поиск">
-            <button type="submit" class="search-form__button" aria-label="Search product"></button>
           </form>
         </div>
 
@@ -51,36 +51,56 @@
             <li class="header__info-item">
               <a href="#" class="header__info-link" aria-label="Доставка">
                 <img src="Images/Svg/delivery-card.svg" class="header__info-pic" alt="Delivery">
-                  <span class="delivery">Доставка</span>
+                  <span class="info">Доставка</span>
               </a>
-            </li>
-            <li class="header__info-item">
-              <a href="#" class="header__info-link">
-                <img src="Images/Svg/wishlist.svg" class="header__info-pic" alt="whishlist"></a>
-            </li>
-            <li class="header__info-item">
-              <a href="#" class="header__info-link">
-                <img src="Images/Svg/bag.svg" class="header__info-pic" alt="bag"></a>
-            </li>
-            <li class="header__info-item">
-              <a href="#" class="header__info-link">
-                <img src="Images/Svg/profile.svg" class="header__info-pic" alt="profile"></a>
             </li>
           </ul>
         </div>
 
-      <div class="header__catalog catalog">
-        <ul class="header__catalog-list">
-          <li class="header__catalog-item"><a href="#" class="header__catalog-link">Кухни</a></li>
-          <li class="header__catalog-item"><a href="#" class="header__catalog-link">Спальни</a></li>
-          <li class="header__catalog-item"><a href="#" class="header__catalog-link">Гостинные</a></li>
-          <li class="header__catalog-item"><a href="#" class="header__catalog-link">Прихожие</a></li>
-          <li class="header__catalog-item"><a href="#" class="header__catalog-link">Офисная мебель</a></li>
-          <li class="header__catalog-item"><a href="#" class="header__catalog-link">Детская</a></li>
-          <li class="header__catalog-item"><a href="#" class="header__catalog-link">Акция</a></li>
-        </ul>
-      </div>
+        <div class="header__bar">
+          <ul class="header__bar-list">
+            <li class="header__bar-item">
+              <a href="#" class="header__bar-link">
+                <img src="Images/Svg/wishlist.svg" class="header__bar-pic" alt="whishlist"></a>
+            </li>
+            <li class="header__bar-item">
+              <a href="#" class="header__bar-link">
+                <img src="Images/Svg/bag.svg" class="header__bar-pic" alt="bag"></a>
+            </li>
+            <li class="header__bar-item">
+              <a href="#" class="header__bar-link">
+                <img src="Images/Svg/profile.svg" class="header__bar-pic" alt="profile"></a>
+            </li>
+          </ul>
+        </div>
+    </div>  <!-- header__inner end -->
   </header>  <!-- header end -->
+
+      <div class="head__catalog catalog">
+        <ul class="head__catalog-list">
+          <li class="head__catalog-item">
+            <a href="#" class="head__catalog-link"><img class="head__catalog-pic" src="Images/Svg/kitchen.svg" alt="Кухни">Кухни</a>
+          </li>
+          <li class="head__catalog-item">
+            <a href="#" class="head__catalog-link"><img class="head__catalog-pic" src="Images/Svg/bedroom.svg" alt="Спальни">Спальни</a>
+          </li>
+          <li class="head__catalog-item">
+            <a href="#" class="head__catalog-link"><img class="head__catalog-pic" src="Images/Svg/livingroom.svg" alt="Гостинные">Гостинные</a>
+          </li>
+          <li class="head__catalog-item">
+            <a href="#" class="head__catalog-link"><img class="head__catalog-pic" src="Images/Svg/closet.svg" alt="Прихожие">Прихожие</a>
+          </li>
+          <li class="head__catalog-item">
+            <a href="#" class="head__catalog-link"><img class="head__catalog-pic" src="Images/Svg/office.svg" alt="Офисная мебель">Офисная мебель</a>
+          </li>
+          <li class="head__catalog-item">
+            <a href="#" class="head__catalog-link"><img class="head__catalog-pic" src="Images/Svg/childrensroom.svg" alt="Детская">Детская</a>
+          </li>
+          <li class="head__catalog-item">
+            <a href="#" class="head__catalog-link">Акция</a>
+          </li>
+        </ul>
+      </div> <!-- header__catalog end -->
 
   <main class="page__main main">
 
@@ -326,11 +346,10 @@
       </ul>
     </section>
   </main>
-  </div>
 
   <footer class="page__footer footer">
     <div class="footer__nav">
-      <h3 class="footer__text">Навигация</h3>
+      <h3 class="footer__title">Навигация</h3>
 
       <ul class="footer__list">
         <li><a class="footer__link" href="#">Кухни</a></li>
@@ -356,18 +375,27 @@
       </ul>
 
       <div class="footer__info">
-        <img src="Images/Logo/footer-logo.svg" alt="footer-logo">
+        <img class="footer__info-logo" src="Images/Logo/footer-logo.svg" alt="footer-logo">
         <address class="footer__address">г. Анапа, Анапское шоссе,30 Ж/К Черное море
         </address>
         <ul class="footer__info-list">
-          <li><a href="tel:+79648999119" class="footer__tel-link">8 (964) 89 99 119</a></li>
-          <li><a href="https://instagram.com" class="footer__insta-link">INSTAGRAM</a></li>
-          <li><a href="mailto:loft_anapa@mail.ru" class="footer__mail-link">mebel_loft_anapa@mail.ru</a></li>
+          <li>
+            <a href="tel:+79648999119" class="footer__tel-link">
+              <img src="Images/footer-img/phone.svg">8 (964) 89 99 119</a>
+          </li>
+          <li>
+            <a href="https://instagram.com" class="footer__insta-link">
+              <img src="Images/footer-img/inst.svg">INSTAGRAM</a>
+          </li>
+          <li><a href="mailto:loft_anapa@mail.ru" class="footer__mail-link">
+            <img src="Images/footer-img/mail.svg">mebel_loft_anapa@mail.ru</a>
+          </li>
         </ul>
       </div>
 
     </div>
   </footer>
   <script src="app/js/app.min.js"></script>
+  </div>
 </body>
 </html>
