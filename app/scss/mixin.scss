@@ -4,3 +4,17 @@
    line-height: $main-line-height;
    font-weight: 700;
 }
+
+@mixin font-header{
+  font-family: $main-font;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+}
+
+@mixin headCatalog{
+   font-family: $main-font;
+   font-size: $main-font-size;
+   line-height: $main-line-height;
+   font-weight: 400;
+}
