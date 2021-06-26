@@ -4,7 +4,7 @@
 
 @import "variables.scss";
 
-/*Общие стили*/
+/* Общие стили */
 body {
   font-family: $main-font;
   margin: 0;
@@ -21,23 +21,20 @@ a{
 }
 
 .wrapper{
-    width: 100%;
-    max-width: 1400px;
+    width: 1158px;
     margin: 0 auto;
-    padding: 0 130px;
 }
-/* Header*/
+
+/* Header */
 .header{
   width: 100%;
   padding-top: 56px;
   padding-bottom: 45px;
 }
-.header__inner{
-  display: flex;
-  align-items: center;
-}
-.header__logo{
 
+.header__inner{
+  display: -webkit-box;
+  align-items: center;
 }
 
 .header__logo-pic{
@@ -131,13 +128,11 @@ a{
   margin-right: 0;
 }
 
+
 /*Head catalog*/
 .head__catalog-list{
   display: flex;
   align-items: center;
-}
-.head__catalog-list:last-child{
-  color: $red;
 }
 
 .head__catalog-pic{
@@ -149,5 +144,90 @@ a{
   color: $dark-grey;
   @include headCatalog;
   margin-right: 50px;
+}
+.head__catalog-link:last-of-type{
+ }
+
+
+/* Slider */
+.main__slider {
+  position: relative;
+  background: url(../Images/Slider/slider.jpg) center no-repeat;
+  background-size: cover;
+  width: 1140px;
+  height: 476px;
+}
+.main__slider-intro{
+  position: relative;
+}
+
+.main__slider-title{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  font-family: Playfair Display;
+  font-size: 50px;
+  font-weight: 700;
+  margin: 110px 0 15px 120px;
+  line-height: 53px;
+  width: 216px;
+  color:#3C3C3C;
+  text-transform: uppercase;
+}
+
+.main__slider-subtitle{
+  position: absolute;
+  top: 210px;
+  left: 124px;
+  font-family: 'Roboto', 'Arial', sans-serif;
+  font-size: $main-font-size;
+  margin: 0;
+  padding: 15px 0 20px;
+  line-height: 23px;
+  color: #343434;
+}
+
+.main__slider-link{
+  position: absolute;
+  top: 260px;
+  left: 124px;
+  font-family: 'Roboto', 'Arial', sans-serif;
+  font-weight: 700;
+  border: 1px solid #fff;
+  margin-bottom: 140px;
+  padding: 14px 25px;
+  vertical-align: middle;
+  box-shadow: 0px 5px rgba(0, 0, 0, 0.09);
+  background: #fff;
+  color: #414141;
+}
+
+.slider__buttons {
+  position: relative;
+}
+
+.slider__button--next{
+  position: absolute;
+  top: 218px;
+  left: 38px;
+  width: 30px;
+  height: 30px;
+  background: rgba(157, 157, 157, 0.28);
+  border: none;
+  cursor: pointer;
+
+}
+
+.slider__button--prev{
+  position: absolute;
+  top: 218px;
+  right: 38px;
+  width: 30px;
+  height: 30px;
+  background: #fff;
+  border: none;
+  transform: rotate(180deg);
+  color: #000;
+  cursor: pointer;
 }
 
