@@ -1,12 +1,10 @@
 @import "../fonts/fonts.scss";
-
 @import "mixin.scss";
-
 @import "variables.scss";
 
 /* Общие стили */
 body {
-  font-family: $main-font;
+  font-family: $mainFontFamily;
   margin: 0;
   padding: 0;
   width: 100%;
@@ -27,10 +25,14 @@ a{
 
 /* Header */
 .header{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
   width: 100%;
   padding-top: 56px;
-  padding-bottom: 45px;
+  padding-bottom: 30px;
 }
+
 
 .header__inner{
   display: flex;
@@ -38,7 +40,8 @@ a{
 }
 
 .header__logo-pic{
-  margin-right: 34px;
+  margin-right: 28px;
+  padding-left: 7px;
 }
 
 .header__navigation{
@@ -59,8 +62,7 @@ a{
 }
 
 .nav__link{
-  @include font-header;
-  color: $dark-grey;
+  @include navfont($mainFontFamily, $navFontSize, $navLineHeight, $weight, $darkGrey);
   transition: color .2s linear;
 }
 
@@ -81,16 +83,14 @@ a{
 }
 
 .search-form__field{
-  @include font-header;
   width: 280px;
   border: none;
   outline: none;
   padding: 13px 20px 13px 15px;
-  color: $dark-grey;
 }
 
 .header__info-link{
-  color: $dark-grey;
+  @include navfont($mainFontFamily, $navFontSize, $navLineHeight, $weight, $darkGrey);
 }
 
 .header__info-list{
@@ -112,10 +112,6 @@ a{
   margin-right: 11px;
 }
 
-.info{
-  @include font-header;
-}
-
 .header__bar-list{
   display: flex;
 
@@ -131,23 +127,24 @@ a{
 
 /*Head catalog*/
 
-.head__catalog-list{
+.head__catalog-list {
   display: flex;
   align-items: center;
+  margin-top: 45px;
 }
 
-.head__catalog-pic{
+.head__catalog-pic {
   vertical-align: middle;
   margin-right: 10px;
 }
 
-.head__catalog-link{
-  color: $dark-grey;
-  @include headCatalog;
+.head__catalog-link {
+  @include Font($mainFontFamily, $mainFontSize, $mainLineHeight, $weight, $darkGrey);
   margin-right: 50px;
 }
-
-.head__catalog-link:last-of-type{
+.head__catalog-link--red{
+  margin-right: 0;
+  color:$red;
 }
 
 /* Slider */
@@ -155,17 +152,17 @@ a{
   position: relative;
   background: url(../Images/Slider/slider.jpg) center no-repeat;
   background-size: cover;
-  width: 1140px;
-  height: 476px;
+  width: 1166px;
+  height: 450px;
 }
 
-.main__slider-intro{
+.main__slider-intro {
   position: relative;
 }
 
-.main__slider-title{
+.main__slider-title {
   position: absolute;
-  top: 0px;
+  top: -9px;
   left: 0px;
   font-family: Playfair Display;
   font-size: 50px;
@@ -177,23 +174,25 @@ a{
   text-transform: uppercase;
 }
 
-.main__slider-subtitle{
+.main__slider-subtitle {
   position: absolute;
-  top: 210px;
+  top: 203px;
   left: 124px;
-  font-family: 'Roboto', 'Arial', sans-serif;
-  font-size: $main-font-size;
+  font-family: Roboto Condensed, sans-serif;
+  font-size: $mainFontSize;
+  font-weight: 400;
+  letter-spacing: 1px;
   margin: 0;
   padding: 15px 0 20px;
   line-height: 23px;
   color: #343434;
 }
 
-.main__slider-link{
+.main__slider-link {
   position: absolute;
   top: 260px;
   left: 124px;
-  font-family: 'Roboto', 'Arial', sans-serif;
+  font-family: Roboto Condensed, sans-serif;
   font-weight: 700;
   border: 1px solid #fff;
   margin-bottom: 140px;
@@ -201,7 +200,12 @@ a{
   vertical-align: middle;
   box-shadow: 0px 5px rgba(0, 0, 0, 0.09);
   background: #fff;
-  color: #414141;
+  color: $darkGrey;
+  transition: color .2s linear;
+}
+
+.main__slider-link:hover{
+  color:#245462;
 }
 
 .slider__buttons {
@@ -210,7 +214,7 @@ a{
 
 .slider__button--next{
   position: absolute;
-  top: 218px;
+  top: 205px;
   left: 38px;
   width: 30px;
   height: 30px;
@@ -221,19 +225,28 @@ a{
 
 .slider__button--prev{
   position: absolute;
-  top: 218px;
+  top: 205px;
   right: 38px;
   width: 30px;
   height: 30px;
   background: #fff;
   border: none;
   transform: rotate(180deg);
-  color: #000;
+  color: $black;
   cursor: pointer;
+}
+
+/* Main products */
+.main__products-title{
+  @include Font($mainFontFamily, $mainFontSize, $mainLineHeight, $weight, $darkGrey);
+  margin-top: 30px;
+  position: relative;
+  margin-bottom: 67px;
+  left: 13px;
 }
 .main__products-list {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(4, 1fr);
   row-gap: 53px;
   column-gap: 29px;
   padding-left: 0;
