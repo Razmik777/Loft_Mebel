@@ -1,20 +1,16 @@
-@mixin font{
-   font-family: $main-font;
-   font-size: $main-font-size;
-   line-height: $main-line-height;
-   font-weight: 700;
+
+@mixin navfont($mainFontFamily, $navFontSize, $navLineHeight, $weight, $darkGrey) {
+  font-family: $mainFontFamily;
+  font-size: $navFontSize;
+  line-height: $navLineHeight;
+  font-weight: $weight;
+  color: $darkGrey;
 }
 
-@mixin font-header{
-  font-family: $main-font;
-  font-size: 14px;
-  line-height: 16px;
-  font-weight: 400;
-}
-
-@mixin headCatalog{
-   font-family: $main-font;
-   font-size: $main-font-size;
-   line-height: $main-line-height;
-   font-weight: 400;
-}
+ @mixin Font($mainFontFamily, $mainFontSize, $mainLineHeight, $weight, $darkGrey) {
+    font-family: $mainFontFamily;
+    font-size: $mainFontSize;
+    line-height: $mainLineHeight;
+    font-weight: $weight;
+    color: $darkGrey;
+ }
