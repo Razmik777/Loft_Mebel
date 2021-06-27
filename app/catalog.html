@@ -35,8 +35,8 @@
 
     <div class="header__search-container">
       <form action="#" class="header__search-form search-form" method="get">
+        <button type="submit" class="search-form__button" aria-label="Search product"><img src="Images/Svg/search.svg" alt="Search"></button>
         <input type="search" class="search-form__field" placeholder="Поиск">
-        <button type="submit" class="search-form__button" aria-label="Search product"></button>
       </form>
     </div>
 
@@ -68,6 +68,7 @@
         </li>
           </ul>
         </div>
+  </header>  <!-- header end -->
 
     <div class="header__catalog catalog">
       <ul class="header__catalog-list">
@@ -93,16 +94,15 @@
           <a href="#" class="header__catalog-link">Акция</a>
         </li>
       </ul>
-    </div>
+    </div>  <!-- header__catalog end -->
 
-  </header> <!-- header end -->
   <main class="page__main main">
 
     <nav class="main__navigation navigation">
       <a href="main.html" class="main__navigation-link">Главная</a>
       <a href="#" class="main__navigation-link">Гостинные</a>
       <a href="#" class="main__navigation-link">Мягкая мебель</a>
-      <a href="#" class="main__navigation-link">Диваны</a>
+      <a href="" class="main__navigation-link">Диваны</a>
     </nav>
 
     <div class="main__filter">
@@ -302,7 +302,7 @@
   </div>    <!-- wrapper end -->
   <footer class="page__footer footer">
     <div class="footer__nav">
-      <h3 class="footer__text">Навигация</h3>
+      <h3 class="footer__title">Навигация</h3>
 
       <ul class="footer__list">
         <li><a class="footer__link" href="#">Кухни</a></li>
@@ -332,9 +332,17 @@
         <address class="footer__address">г. Анапа, Анапское шоссе,30 Ж/К Черное море
         </address>
         <ul class="footer__info-list">
-          <li><a href="tel:+79648999119" class="footer__tel-link">8 (964) 89 99 119</a></li>
-          <li><a href="https://instagram.com" class="footer__insta-link">INSTAGRAM</a></li>
-          <li><a href="mailto:loft_anapa@mail.ru" class="footer__mail-link">mebel_loft_anapa@mail.ru</a></li>
+          <li>
+            <a href="tel:+79648999119" class="footer__tel-link">
+              <img src="Images/footer-img/phone.svg">8 (964) 89 99 119</a>
+          </li>
+          <li>
+            <a href="https://instagram.com" class="footer__insta-link">
+              <img src="Images/footer-img/inst.svg">INSTAGRAM</a>
+          </li>
+          <li><a href="mailto:loft_anapa@mail.ru" class="footer__mail-link">
+            <img src="Images/footer-img/mail.svg">mebel_loft_anapa@mail.ru</a>
+          </li>
         </ul>
       </div>
     </div>
