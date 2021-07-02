@@ -64,7 +64,7 @@
                 <img src="Images/Svg/wishlist.svg" class="header__bar-pic" alt="whishlist"></a>
             </li>
             <li class="header__bar-item">
-              <a href="#" class="header__bar-link">
+              <a href="#" class="header__bar-link header__bar-link--cart">
                 <img src="Images/Svg/bag.svg" class="header__bar-pic" alt="bag"></a>
             </li>
             <li class="header__bar-item">
@@ -140,10 +140,18 @@
         <li class="main__products-item">
           <a href="#"><img src="Images/Products/3.png" class="products__img" alt="Динс Velvet Yellow" width="200" height="150">
           <div class="main__products-descr">
+            <div class="main__products-promo">
+              <img src="Images/Svg/Vector.svg" class="promo__img" alt="Promo" width="19" height="19">
+              <span class="promo-cost">-25%</span>
+            </div>
             <h2 class="products__title">Динс Velvet Yellow</h2>
             <span class="products__text">Диваны</span>
-            <span class="products__price">28 490₽</span>
-          </div></a>
+            <div class="product-prices">
+              <span class="products__price">28 490₽</span>
+              <span class="products__price-old">37990</span>
+            </div>
+          </div>
+          </a>
         </li>
         <li class="main__products-item">
           <a href="#"><img src="Images/Products/4.png" class="products__img" alt="Кускен Navy Blue" width="200" height="150">
@@ -300,7 +308,7 @@
         <li class="main__products-item">
           <a href="#"><img src="Images/Products/23.png" class="products__img" alt="Валенсия Beige" width="200" height="150">
           <div class="main__products-descr">
-            <h2 class="products__titmain__products-descrmain__products-descrle">Валенсия Beige</h2>
+            <h2 class="products__title">Валенсия Beige</h2>
             <span class="products__text">Шкафы</span>
             <span class="products__price">19 990₽</span>
           </div></a>
@@ -350,52 +358,49 @@
   </main>
 
   <footer class="page__footer footer">
+    <h3 class="footer__title">Навигация</h3>
+
     <div class="footer__nav">
-      <h3 class="footer__title">Навигация</h3>
-
-      <ul class="footer__list">
-        <li><a class="footer__link" href="#">Кухни</a></li>
-        <li><a class="footer__link" href="#">Спальни</a></li>
-        <li><a class="footer__link" href="#">Гостинные</a></li>
+      
+      <ul class="footer__nav-list">
+        <li><a class="footer__nav-link" href="#">Кухни</a></li>
+        <li><a class="footer__nav-link" href="#">Спальни</a></li>
+        <li><a class="footer__nav-link" href="#">Гостинные</a></li>
       </ul>
 
-      <ul class="footer__list">
-        <li><a class="footer__link" href="#">Прихожие</a></li>
-        <li><a class="footer__link" href="#">Офисная мебель</a></li>
-        <li><a class="footer__link" href="#">Детская</a></li>
+      <ul class="footer__nav-list">
+        <li><a class="footer__nav-link" href="#">Прихожие</a></li>
+        <li><a class="footer__nav-link" href="#">Офисная мебель</a></li>
+        <li><a class="footer__nav-link" href="#">Детская</a></li>
       </ul>
 
-      <ul class="footer__list">
-        <li><a class="footer__link" href="#">Шкафы</a></li>
-        <li><a class="footer__link" href="#">Матрасы</a></li>
-        <li><a class="footer__link" href="#">Мягкая мебель</a></li>
+      <ul class="footer__nav-list">
+        <li><a class="footer__nav-link" href="#">Шкафы</a></li>
+        <li><a class="footer__nav-link" href="#">Матрасы</a></li>
+        <li><a class="footer__nav-link" href="#">Мягкая мебель</a></li>
       </ul>
-
-      <ul class="footer__list">
-        <li><a class="footer__link" href="#">Акция</a></li>
-        <li><a class="footer__link" href="#">Новинки</a></li>
-      </ul>
+      
+      <div class="footer__logo">
+        <span class="footer__info-logo">LM</span>
+        <p class="footer__address-value">г. Анапа, Анапское шоссе, 30 Ж/К Черное море</p>
+      </div>
+    </div>
 
       <div class="footer__info">
-        <img class="footer__info-logo" src="Images/Logo/footer-logo.svg" alt="footer-logo">
-        <address class="footer__address">г. Анапа, Анапское шоссе,30 Ж/К Черное море
-        </address>
-        <ul class="footer__info-list">
-          <li>
-            <a href="tel:+79648999119" class="footer__tel-link">
-              <img src="Images/footer-img/phone.svg">8 (964) 89 99 119</a>
-          </li>
-          <li>
-            <a href="https://instagram.com" class="footer__insta-link">
-              <img src="Images/footer-img/inst.svg">INSTAGRAM</a>
-          </li>
+        <ul class="footer__info-menu">
+          <li><a class="footer__info-list footer__info-list--red" href="#">Акция</a></li>
+          <li><a class="footer__info-list" href="#">Новинки</a></li>
+        </ul>
+
+        <ul class="footer__info-contacts">
+          <li><a href="tel:+79648999119" class="footer__tel-link">
+            <img src="Images/footer-img/phone.svg" class="footer__insta-pic">8 (964) 89 99 119</a></li>
+          <li><a href="https://instagram.com" class="footer__insta-link">
+            <img src="Images/footer-img/inst.svg" class="footer__insta-pic">INSTAGRAM</a></li>
           <li><a href="mailto:loft_anapa@mail.ru" class="footer__mail-link">
-            <img src="Images/footer-img/mail.svg">mebel_loft_anapa@mail.ru</a>
-          </li>
+            <img src="Images/footer-img/mail.svg" class="footer__insta-pic">mebel_loft_anapa@mail.ru</a></li>
         </ul>
       </div>
-
-    </div>
   </footer>
   <script src="app/js/app.min.js"></script>
   </div>
