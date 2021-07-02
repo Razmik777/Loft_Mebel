@@ -14,3 +14,19 @@
     font-weight: $weight;
     color: $darkGrey;
  }
+
+ @mixin productsFont($mainFontFamily, $mainFontSize, $mainLineHeight, $weightPr, $darkGrey) {
+  font-family: $mainFontFamily;
+  font-size: $mainFontSize;
+  line-height: $mainLineHeight;
+  font-weight: $weightPr;
+  color: $darkGrey;
+ }
+
+ @mixin footerNav($mainFontFamily, $navFontSize, $footerLineHeight, $weight, $darkGrey) {
+  font-family: $mainFontFamily;
+  font-size: $navFontSize;
+  line-height: $footerLineHeight;
+  font-weight: $weight;
+  color: $darkGrey;
+ }
