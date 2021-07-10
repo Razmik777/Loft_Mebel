@@ -1,0 +1,38 @@
+.head__catalog-list {
+    display: flex;
+    align-items: center;
+    margin-top: 16px;
+  }
+  
+  .head__catalog-pic {
+    vertical-align: middle;
+    margin-right: 10px;
+  }
+  
+  .head__catalog-link {
+    @include Font($mainFontFamily, $mainFontSize, $mainLineHeight, $weight, $darkGrey);
+    margin-right: 50px;
+  }
+  
+  .head__catalog-link--red {
+    margin-right: 0;
+    color:$red;
+  }
+
+  @media screen and (max-width: $tabletSize) {
+    .head__catalog-list{
+      padding-left: 24px;
+      margin: 16px auto;
+    }
+    .head__catalog-item:nth-child(6),:nth-child(7){
+      display: none;
+    }
+    .head__catalog-link{
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+      line-height: 16px;
+      margin-right: 35px;
+    }
+    
+  }

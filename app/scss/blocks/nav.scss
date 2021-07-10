@@ -1,0 +1,21 @@
+.nav__list-main {
+    display: flex;
+    padding-left: 0;
+  }
+  
+  .nav__item {
+    margin-right: 30px;
+  }
+  
+  .nav__item:last-child {
+    margin-right: 0;
+  }
+  
+  .nav__link {
+    @include navfont($mainFontFamily, $navFontSize, $navLineHeight, $weight, $darkGrey);
+    transition: color .2s linear;
+  }
+  
+  .nav__link:hover {
+    color: #245462;
+  }
