@@ -40,13 +40,13 @@ function styles() {
 
 function images() {
   return src('app/images/**/*')
-  .pipe(newer('app/images/dest/*'))
+  .pipe(newer('app/dest/images/'))
   .pipe(imagemin())
-  .pipe(dest('app/images/dest/'))
+  .pipe(dest('app/dest/images/'))
 }
 
 function cleanimg() {
-  return del('app/images/dest/**/*', { force: true })
+  return del('app/dest/images/**/*', { force: true })
 }
 
 function cleandist() {
@@ -57,7 +57,7 @@ function buildcopy() {
   return src([
     'app/css/**/*.min.css',
     'app/js/**/*.min.js',
-    'app/Images/dest/**/',
+    'app/dest/images/**/',
     'app/**/*.html',
     ], { base : 'app'})
    .pipe(dest('dist'));
@@ -67,7 +67,7 @@ function startwatch(){
   watch('app/**/' + preprocessor + '/**/*', styles);
   watch(['app/**/*.js', '!app/**/*.min.js'], scripts);
   watch('app/**/*.html').on('change', browserSync.reload);
-  watch('app/images/**/*', images);
+  watch('app/dest/images/**/', images);
 }
 
 exports.browsersync = browsersync;
