@@ -57,10 +57,10 @@
     background: #fff;
     color: $darkGrey;
     transition: color .2s linear;
-  }
-  
-  .main__slider-link:hover{
-    color:#245462;
+
+    &:hover{
+      color:#245462;
+    }
   }
   
   .slider__buttons {
@@ -101,6 +101,7 @@
       height: 257px;
       padding: 0;
     }
+
     .main__slider-intro{
       position: absolute;
       top: 18%;
@@ -109,8 +110,19 @@
       background-size: cover;
       width: 437px;
       height: 209px;
-    }
 
+      &:before{
+        content: " ";
+        position: absolute;
+        top:-45px;
+        right: -30px;
+        display: block;
+        background:url(../Images/slider/image-4.png) center no-repeat;
+        width: 90px;
+        height: 44px;
+      }
+    }
+    
     .main__slider-title{
       display: none;
     }
@@ -121,8 +133,8 @@
 
     .main__slider-subtitle--mob {
       position: absolute;
-      top: 0;
-      left:-180px;
+      top: 20px;
+      left: -184px;
       display: block;
       width: 204px;
       height: 56px;
@@ -138,16 +150,14 @@
     .main__slider-link{
       position: absolute;
       top: 100px;
-      left: -180px;
+      left: -183px;
       font-family: $mainFontFamily;
       font-weight: 400;
       font-size: 12px;
       line-height: 14px;
       text-transform: none;
-      border: 1px solid #fff;
       padding: 14px;
       margin: 0;
-      background: #fff;
       color: $black;
       transition: color .2s linear;
     }
@@ -157,7 +167,7 @@
       top: 165px;
       left: 417px;
       background: rgba(255, 255, 255, 0.38);
-      padding: 10px 13px;
+      padding: 10px 10px;
     }
 
     .slider__button--prev{
@@ -165,5 +175,6 @@
       top: 165px;
       right: -40px;
       align-items: center;
+      color: $black;
     }
   }

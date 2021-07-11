@@ -1,7 +1,16 @@
-.head__catalog-list {
+  .head__catalog-list {
     display: flex;
     align-items: center;
     margin-top: 16px;
+    margin-bottom: 30px;
+  }
+
+  .head__catalog-menu{
+    display: none;
+  }
+
+  .head__catalog-menu--main{
+    margin-left: 47px;
   }
   
   .head__catalog-pic {
@@ -22,17 +31,31 @@
   @media screen and (max-width: $tabletSize) {
     .head__catalog-list{
       padding-left: 24px;
-      margin: 16px auto;
+      margin-top: 16px;
+      margin-bottom: 30px;
     }
+
     .head__catalog-item:nth-child(6),:nth-child(7){
       display: none;
     }
+    
+    .head__catalog-menu{
+      display: inline-block;
+      margin-left: 20px;
+    }
+
     .head__catalog-link{
       display: flex;
       align-items: center;
       font-size: 14px;
       line-height: 16px;
       margin-right: 35px;
+    }
+
+    .head__catalog-link--last{
+      font-size: 14px;
+      line-height: 16px;
+      color: $darkGrey;
     }
     
   }

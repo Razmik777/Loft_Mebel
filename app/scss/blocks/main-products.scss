@@ -1,4 +1,4 @@
-.main__products {
+  .main__products {
     margin-bottom: 64px;
   }
   
@@ -30,64 +30,6 @@
     align-items: center;
     margin-right: 7px;
   }
-  
-  .promo__img{
-    margin-right: 7px;
-  }
-  
-  .promo-cost {
-    font-family: $mainFontFamily;
-    font-size: 12px;
-    line-height: 14px;
-    font-weight: 400;
-    color: $black;
-  }
-  .products__title {
-    @include productsFont($mainFontFamily, $mainFontSize, $mainLineHeight, $weightPr, $darkGrey);
-    margin: 54px 0 6px;
-    font-style: normal;
-  }
-  
-  .products__title:before {
-    content: "";
-    position: absolute;
-    top: -210px;
-    right: 21px;
-    display: block;
-    background: url(../Images/Svg/like.svg) no-repeat;
-    background-size: cover;
-    width: 18px;
-    height: 15px;
-    z-index: 1;
-  }
-  
-  .products__text {
-    font-family: $mainFontFamily;
-    font-weight: 400;
-    font-size: 11px;
-    line-height: 13px;
-    margin-bottom: 9px;
-    color: $darkGrey;
-  }
-  .product-prices{
-    display: flex;
-    align-items: center;
-  }
-  .products__price {
-    display: block;
-    @include productsFont($mainFontFamily, $mainFontSize, $mainLineHeight, $weightPr, $darkGrey);
-    margin-right: 6px;
-  }
-  
-  .products__price-old {
-    font-family: $mainFontFamily;
-    font-size: 12px;
-    line-height: 14px;
-    font-weight: 500;
-    text-decoration: line-through;
-    cursor: none;
-    color: #ccc;
-  }
 
   @media screen and (max-width: $tabletSize) {
     .main__products-list{
@@ -101,22 +43,6 @@
 
     .main__products-item{
       display: none;
-    }
-
-    .products-item--mob{
-      display: block;
-    }
-
-    .products__title{
-      font-size: 14px;
-      line-height: 16px;
-      font-weight: 500;
-    }
-
-    .products__price{
-      font-size: 14px;
-      line-height: 16px;
-      font-weight: 500;
     }
   }
  

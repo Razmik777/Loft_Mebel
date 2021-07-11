@@ -1,4 +1,4 @@
-.footer {
+  .footer {
     height: 234px;
   }
   
@@ -14,25 +14,27 @@
   
   .footer__nav {
     display: flex;
+    flex-wrap: wrap;
     position: relative;
   }
   
   .footer__nav-list {
     margin: 10px 0 0;
+    
+    &:first-child {
+      padding-left: 0;
+    }
   }
   
   .footer__nav-link {
     display: block;
-    @include footerNav($mainFontFamily, $navFontSize, $footerLineHeight, $weight, $darkGrey);
+    @include Font($mainFontFamily, $navFontSize, $footerLineHeight, $weight, $darkGrey);
     margin-bottom: 7px;
-  }
-  
-  .footer__nav-list:first-child {
-    padding-left: 0;
   }
   
   .footer__logo {
     display: flex;
+    flex-wrap: wrap;
     justify-content: flex-end;
     flex-direction: column;
   }
@@ -53,7 +55,7 @@
     position: absolute;
     top: 20px;
     right: 0;
-    @include footerNav($mainFontFamily, $navFontSize, $footerLineHeight, $weight, $darkGrey);
+    @include Font($mainFontFamily, $navFontSize, $footerLineHeight, $weight, $darkGrey);
     text-align: right;
     margin: 20px 0 0;
     width: 170px;
@@ -61,6 +63,7 @@
   
   .footer__info {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding: 20px 0 30px;
   }
@@ -72,9 +75,8 @@
   
   .footer__info-list {
     margin-right: 30px;
-    @include footerNav($mainFontFamily, $navFontSize, $footerLineHeight, $weight, $darkGrey);
+    @include Font($mainFontFamily, $navFontSize, $footerLineHeight, $weight, $darkGrey);
   }
-  
   
   .footer__info-list--red {
     color:$red;
@@ -83,8 +85,9 @@
   .footer__info-contacts {
     display: flex;
   }
+
   .footer__tel-link {
-    @include footerNav($mainFontFamily, $navFontSize, $footerLineHeight, $weight, $darkGrey);
+    @include Font($mainFontFamily, $navFontSize, $footerLineHeight, $weight, $darkGrey);
     margin-right: 30px;
   }
   
@@ -98,7 +101,7 @@
   }
   
   .footer__mail-link {
-    @include footerNav($mainFontFamily, $navFontSize, $footerLineHeight, $weight, $darkGrey);
+    @include Font($mainFontFamily, $navFontSize, $footerLineHeight, $weight, $darkGrey);
   }
   
   .footer__insta-pic {
