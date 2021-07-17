@@ -59,3 +59,14 @@
     }
     
   }
+  @media screen and (max-width: $mobileSize) {
+    
+    .head__catalog-item{
+      display: flex;
+      flex-direction: column;
+    }
+
+    .head__catalog-item:nth-child(5),:nth-child(6),:nth-child(7){
+      display: none;
+    }
+  }

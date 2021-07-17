@@ -39,3 +39,10 @@ a {
   }
 }
 
+@media screen and (max-width: $mobileSize) {
+  .wrapper {
+    width: 320px;
+    margin: 0 20px;
+  }
+}
+

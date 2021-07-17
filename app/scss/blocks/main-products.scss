@@ -45,4 +45,19 @@
       display: none;
     }
   }
+
+  @media screen and (max-width: $mobileSize) {
+    .main__products-list{  
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 60px;
+      row-gap: 92px;
+    }
+
+    .main__products-title{
+      @include Font($mainFontFamily, $mainFontSize, $mainLineHeight, $weightNorm, $darkGrey);
+      margin: 0 0 60px;
+    }
+    
+  }
  

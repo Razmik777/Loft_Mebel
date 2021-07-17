@@ -108,3 +108,9 @@
     vertical-align: middle;
     margin-right: 10px;
   }
+
+  @media screen and (max-width: $mobileSize){
+    .page__footer{
+      display: none;
+    }
+  }

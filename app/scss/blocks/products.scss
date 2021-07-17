@@ -48,7 +48,7 @@
   }
 
   @media screen and (max-width: $tabletSize){
-      .products-item--mob{
+      .products-item--tab{
         display: block;
       }
   
@@ -63,4 +63,15 @@
         line-height: 16px;
         font-weight: 500;
       }
+  }
+
+  @media screen and (max-width: $mobileSize) {
+
+    .products-item--tab{
+      display: none;
+    }
+
+    .products-item--mob{
+      display: block;
+    }
   }

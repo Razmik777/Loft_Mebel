@@ -152,3 +152,15 @@
     right: 38%;
   }
 }
+
+@media screen and (max-width: $mobileSize) {
+
+  .header {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .header__info-links{
+    display: none;
+  }
+}
