@@ -47,16 +47,27 @@
   }
 
   @media screen and (max-width: $mobileSize) {
+
+    .main__products{
+      margin: 0;
+
+    }
     .main__products-list{  
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      column-gap: 60px;
-      row-gap: 92px;
+      row-gap: 20px;
+      width: 290px;
+      height: 169px;
+      margin: 0;
     }
 
     .main__products-title{
       @include Font($mainFontFamily, $mainFontSize, $mainLineHeight, $weightNorm, $darkGrey);
       margin: 0 0 60px;
+    }
+
+    .main__products-promo{
+      top: -103px;
     }
     
   }

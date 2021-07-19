@@ -74,4 +74,17 @@
     .products-item--mob{
       display: block;
     }
+
+    .products__title{
+
+      &:before{
+        right: 0px;
+        top: -100px;
+      }
+    }
+
+    .products__img{
+      width: 94px;
+      height: 71px;
+    }
   }

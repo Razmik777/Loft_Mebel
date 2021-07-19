@@ -11,9 +11,10 @@
 
   <!-- header start -->
   <header class="page__header header">
-
+    <div class="header__inner">
       <div class="header__logo logo">
-        <a href="#" class="header__logo-link" aria-label="Логотип">
+        <a href="index.html" class="header__logo-link" aria-label="Логотип">
+          <img src="Images/Svg/menu-icon.svg" class="header__logo-menu" alt="menu">
           <img src="Images/Logo/LOGO.svg" class="header__logo-pic" alt="logo">
         </a>
       </div>
@@ -22,10 +23,10 @@
 
         <ul class="nav__list-main">
           <li class="nav__item">
-            <a href="main.html" class="nav__link" aria-label="Главная">Главная</a>
+            <a href="index.html" class="nav__link" aria-label="Главная">Главная</a>
           </li>
           <li class="nav__item">
-            <a href="#" class="nav__link" aria-label="О Нас">О Нас</a>
+            <a href="About_us.html" class="nav__link" aria-label="О Нас">О нас</a>
           </li>
           <li class="nav__item">
             <a href="#" class="nav__link" aria-label="Контакты">Контакты</a>
@@ -33,59 +34,69 @@
         </ul>
       </nav>
 
-      <div class="header__search-container">
-        <form action="#" class="header__search-form search-form" method="get">
-          <button type="submit" class="search-form__button" aria-label="Search product"><img src="Images/Svg/search.svg" alt="Search"></button>
-          <input type="search" class="search-form__field" placeholder="Поиск">
-        </form>
-      </div>
+        <div class="header__search-container">
+          <form action="#" class="header__search-form search-form" method="get">
+            <button type="submit" class="search-form__button" aria-label="Search product"><img src="Images/Svg/search.svg" alt="Search"></button>
+            <input type="search" class="search-form__field" placeholder="Поиск">
+          </form>
+        </div>
 
-        <div class="info__links">
-          <ul class="info__links-list">
-            <li class="info__links-item">
-              <a href="#" class="info__links-link" aria-label="Связаться с нами">
-                <img src="Images/Svg/phone-card.svg" class="info__links-pic" alt="Telephone Number">
+        <div class="header__info-links">
+          <ul class="header__info-list">
+            <li class="header__info-item header__info-item--tel">
+              <a href="#" class="header__info-link" aria-label="Связаться с нами">
+                <img src="Images/Svg/phone-card.svg" class="header__info-pic" alt="Telephone Number">
                   <span class="info">8(964)89 99 119</span>
               </a>
             </li>
-            <li class="info__links-item">
-              <a href="#" class="info__links-link" aria-label="Доставка">
-                <img src="Images/Svg/delivery-card.svg" class="info__links-pic" alt="Delivery">
-                  <span class="delivery">Доставка</span>
+            <li class="header__info-item">
+              <a href="#" class="header__info-link" aria-label="Доставка">
+                <img src="Images/Svg/delivery-card.svg" class="header__info-pic" alt="Delivery">
+                  <span class="info">Доставка</span>
               </a>
-            </li>
-            <li class="info__links-item">
-              <a href="#" class="info__links-link">
-                <img src="Images/Svg/wishlist.svg" class="info__links-pic" alt="whishlist"></a>
-            </li>
-            <li class="info__links-item">
-              <a href="#" class="info__links-link">
-                <img src="Images/Svg/bag.svg" class="info__links-pic" alt="bag"></a>
-            </li>
-            <li class="info__links-item">
-              <a href="#" class="info__links-link">
-                <img src="Images/Svg/profile.svg" class="info__links-pic" alt="profile"></a>
             </li>
           </ul>
         </div>
+
+        <div class="header__bar">
+          <ul class="header__bar-list">
+            <li class="header__bar-item">
+              <a href="#" class="header__bar-link">
+                <img src="Images/Svg/wishlist.svg" class="header__bar-pic" alt="whishlist"></a>
+            </li>
+            <li class="header__bar-item">
+              <a href="#" class="header__bar-link header__bar-link--cart">
+                <img src="Images/Svg/bag.svg" class="header__bar-pic" alt="bag"></a>
+            </li>
+            <li class="header__bar-item">
+              <a href="#" class="header__bar-link">
+                <img src="Images/Svg/profile.svg" class="header__bar-pic" alt="profile"></a>
+            </li>
+          </ul>
+        </div>
+    </div>  <!-- header__inner end -->
   </header>  <!-- header end -->
 
   <main class="page__main main">
 
     <section class="about">
-      <span class="about__text"></span>
-      <h1 class="about__title">Интернет-магазин «Лофт Мебель»: купите хорошую мебель в один клик!
-      </h1>
-      <p class="about__descr">Уникальный формат интернет-магазина позволит вам купить лучшую
-        мебель крупнейших российских фабрик максимально быстро и повыгодной цене!
-        Мы благодарим за доверие более десятка производителей, которые далинам возможность представлять лучшие образцы их продукции вроссийском интернет-пространстве. Прямые договоры на поставкумебели с фабрик обеспечивают наиболее привлекательные условия длянаших покупателей.
-      </p>
-
-      <p class="about__descr">
-        Уникальный формат интернет-магазина позволит вам купить лучшую мебель крупнейшихроссийских  фабрик максимально быстро и по выгодной цене!Мы благодарим за доверие более десятка производителей, которые дали нам возможность представлять лучшие образцы их продукции в  российском интернет-пространстве. Прямые договоры на поставку мебели с фабрик обеспечивают наиболее привлекательные условия длянаших покупателей.
-      </p>
-      <div class="about__images">
-        <img src="Images/about/main.jpg" class="about__img" alt="sofa">
+      <div class="about-text">
+        <span class="text">О магазине</span>
+        <h1 class="about__title">Интернет-магазин «Лофт Мебель»: <br>купите хорошую мебель в один клик!
+        </h1>
+          <p class="about__descr">
+            Уникальный формат интернет-магазина позволит вам купить лучшую
+             мебель крупнейших российских фабрик максимально быстро и повыгодной цене!</p>
+          <p class="about__descr">
+             Мы благодарим за доверие более десятка производителей, которые дали
+             нам возможность представлять лучшие образцы их продукции в
+             российском интернет-пространстве. Прямые договоры на поставку
+             мебели с фабрик обеспечивают наиболее привлекательные условия для
+             наших покупателей.
+          </p>
+      </div>
+      <div class="about__image">
+        <img src="Images/about/sofa.png" class="about__img" alt="sofa">
       </div>
     </section>  <!-- about end -->
 
@@ -94,40 +105,48 @@
       <h2 class="benefits__title title">Покупайте с выгодой!</h2>
       <div class="benefits__cards cards">
 
-        <div class="benefit__card">
-          <img class="benefit__card-img" src="Images/Benefit/profit.svg" alt="best price">
+        <div class="benefits__card">
+          <div class="benefit__card-img">
+            <img class="benefit__card-pic" src="Images/Benefit/profit.svg" alt="best price">
+          </div>
+          <h3 class="benefit__card-title">Лучшая цена</h3>
+            <p class="benefit__card-text">
+              Предлагаем близкие к оптовым цены, которые дают возможность приобретать мебель дешевле, чем в розничных салонах и шоу-румах.
+            </p>
         </div>
-        <h3 class="benefit__card-title">Лучшая цена</h3>
-        <p class="benefit__card-text">
-            Предлагаем близкие к оптовым цены, которые дают возможность приобретать мебель дешевле, чем в розничных салонах и шоу-румах.
-        </p>
 
-        <div class="benefit__card">
-          <img class="benefit__card-img" src="Images/Benefit/time-main.svg" alt="save time">
+        <div class="benefits__card">
+          <div class="benefit__card-img">
+            <img class="benefit__card-pic" src="Images/Benefit/vector.svg" alt="delivery">
+          </div>
+            <h3 class="benefit__card-title">Прямые поставки</h3>
+            <p class="benefit__card-text">С ведущих мебельных фабрик уменьшают срок
+              выполнения вашего заказа, даже если речь идет об изготовлении предметов по
+              индивидуальному проекту.
+            </p>
         </div>
-        <h3 class="benefit__card-title">Экономие времени</h3>
-        <p class="benefit__card-text">Не нашли оптимальный вариант или нет
-            времени на поиски? Оставьте онлайн-заявку с критериями, и мы предложим вам
-            несколько достойных образцов.
-        </p>
 
-        <div class="benefit__card">
-          <img class="benefit__card-img" src="Images/Benefit/vector.svg" alt="delivery">
+        <div class="benefits__card">
+          <div class="benefit__card-img">
+            <img class="benefit__card-pic" src="Images/Benefit/time-main.svg" alt="save time">
+          </div>
+            <h3 class="benefit__card-title">Экономия времени</h3>
+            <p class="benefit__card-text">Не нашли оптимальный вариант или нет
+              времени на поиски? Оставьте онлайн-заявку с критериями, и мы предложим вам
+              несколько достойных образцов.
+            </p>
         </div>
-        <h3 class="benefit__card-title">Прямые поставки</h3>
-        <p class="benefit__card-text">С ведущих мебельных фабрик уменьшают срок
-            выполнения вашего заказа, даже если речь идет об изготовлении предметов по
-            индивидуальному проекту.
-        </p>
 
-        <div class="benefit__card">
-          <img class="benefit__card-img" src="Images/Benefit/production.svg" alt="custom">
+        <div class="benefits__card">
+          <div class="benefit__card-img">
+            <img class="benefit__card-pic" src="Images/Benefit/production.svg" alt="custom">
+          </div>
+            <h3 class="benefit__card-title">Изготовление на заказ</h3>
+            <p class="benefit__card-text">Принимаем заявки на изготовление
+             мебели по персональному дизайн-проекту от покупателей из любой точки России.
+             Просим быть готовыми к авансированной оплате персональных заказов.
+            </p>
         </div>
-        <h3 class="benefit__card-title">Изготовление на заказ</h3>
-        <p class="benefit__card-text">Принимаем заявки на изготовление
-            мебели по персональному дизайн-проекту от покупателей из любой точки России.
-            Просим быть готовыми к авансированной оплате персональных заказов.
-        </p>
       </div>  <!-- benefit__cards end -->
 
       <div class="offers">
@@ -157,7 +176,7 @@
         </div>
       </div>  <!-- offers end -->
 
-      <div class="privilege">
+      <div class="privelege">
         <div class="privelege__cards cards">
 
           <div class="privelege__card">

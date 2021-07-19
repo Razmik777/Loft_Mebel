@@ -22,6 +22,10 @@
     @include Font($mainFontFamily, $mainFontSize, $mainLineHeight, $weight, $darkGrey);
     margin-right: 50px;
   }
+
+  .head__catalog-link--mob{
+    display: none;
+  }
   
   .head__catalog-link--red {
     margin-right: 0;
@@ -57,16 +61,43 @@
       line-height: 16px;
       color: $darkGrey;
     }
+
+    .head__catalog-link--mob{
+      display: none;
+    }
     
   }
   @media screen and (max-width: $mobileSize) {
+
+    .head__catalog-list{
+      width: 320px;
+      margin: 0;
+    }
     
     .head__catalog-item{
       display: flex;
       flex-direction: column;
     }
 
-    .head__catalog-item:nth-child(5),:nth-child(6),:nth-child(7){
+    .head__catalog-item:nth-child(7),:nth-child(8),:nth-child(9){
       display: none;
+    }
+
+    .head__catalog-link{
+      flex-direction: column;
+    }
+
+    .head__catalog-link--mob{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-size: 14px;
+      line-height: 16px;
+      margin-right: 35px;
+      color: $darkGrey;
+    }
+
+    .head__catalog-pic{
+     margin-bottom: 20px;
     }
   }

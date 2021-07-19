@@ -9,6 +9,8 @@
 @import "blocks/products.scss";
 @import "blocks/promo.scss";
 @import "blocks/footer.scss";
+@import "blocks/about.scss";
+@import "blocks/benefits.scss";
 
 /* Общие стили */
 
@@ -41,7 +43,7 @@ a {
 
 @media screen and (max-width: $mobileSize) {
   .wrapper {
-    width: 320px;
+    min-width: 320px;
     margin: 0 20px;
   }
 }

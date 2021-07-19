@@ -158,9 +158,28 @@
   .header {
     display: flex;
     flex-wrap: wrap;
+    max-width: 320px;
+    padding: 15px;
+  }
+
+  .header__inner{
+    flex-wrap: wrap;
   }
 
   .header__info-links{
     display: none;
+  }
+
+  .header__search-container{
+    order: 5;
+  }
+
+  .search-form__field{
+    width: 290px;
+    height: 40px;
+  }
+
+  .search-form__button{
+    padding: 18px;
   }
 }

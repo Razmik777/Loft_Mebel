@@ -1,0 +1,28 @@
+
+.benefits__title{
+    font-family: $mainFontFamily;
+    font-size: 24px;
+    font-weight: $weight;
+    line-height: 28px;
+    text-align: center;
+    margin: 100px 0 90px;
+    color: $darkGrey;
+}
+
+.benefits__cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 164px;
+    row-gap: 80px;
+    margin-bottom: 95px;
+}
+
+.benefits__card{
+    position: relative;
+}
+
+.benefit__card-pic{
+    position: absolute;
+    top: 20px;
+    left: -95px;
+}

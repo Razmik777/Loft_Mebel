@@ -190,6 +190,7 @@
   @media screen and (max-width: $mobileSize) {
     .main__slider {
       background:none;
+      min-width: 320px;
     }
     
     .main__slider-intro{
