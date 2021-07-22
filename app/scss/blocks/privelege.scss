@@ -1,0 +1,38 @@
+.privelege{
+    width: 100%;
+    margin: 0 200px;
+}
+
+.privelege__cards{
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    
+}
+
+.privelege__card{
+    width: 568px;
+    min-height: 163px;
+    
+}
+
+.privelege__card-img{
+    position: relative;
+}
+
+.privelege__card-pic{
+    position: absolute;
+    top: -18px;
+    left: -45px;
+}
+
+.privelege__card-title{
+    @include Font($mainFontFamily, $fontSize, $lineHeight, $weight, $darkGrey);
+    margin-bottom: 10px;
+}
+
+.privelege__card-text{
+    @include Font($mainFontFamily, $navFontSize, $AboutLineHeight, $weight, $AboutPage);
+    margin: 0;
+    width: 505px;
+    min-height: 60px;
+}

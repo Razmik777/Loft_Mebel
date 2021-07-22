@@ -1,3 +1,8 @@
+.benefits{
+    max-width: 1100px;
+    margin: 0 auto;
+    
+}
 
 .benefits__title{
     font-family: $mainFontFamily;
@@ -23,6 +28,15 @@
 
 .benefit__card-pic{
     position: absolute;
-    top: 20px;
+    top: 27px;
     left: -95px;
+}
+
+.benefit__card-title{
+    @include Font($mainFontFamily, $fontSize, $lineHeight, $weight, $darkGrey);
+    margin-bottom: 10px;
+}
+
+.benefit__card-text{
+    @include Font($mainFontFamily, $navFontSize, $AboutLineHeight, $weight, $AboutPage);
 }

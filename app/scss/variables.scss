@@ -1,8 +1,11 @@
 $mainFontFamily:'Roboto', 'Arial', sans-serif;
 
+$fontSize: 18px;
 $mainFontSize: 16px;
 $navFontSize: 14px;
 
+$lineHeight: 21px;
+$AboutLineHeight: 20px;
 $mainLineHeight: 19px;
 $footerLineHeight: 18px;
 $navLineHeight: 16px;
@@ -15,6 +18,7 @@ $black: #000000;
 $darkGrey: #414141;
 $grey:#c4c4c4;
 $red:#D74444;
+$AboutPage: #686868;
 
 /*Responsive sizes*/
 $tabletSize: 768px;
