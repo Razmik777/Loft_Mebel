@@ -1,5 +1,10 @@
-  .main__products {
-    margin-bottom: 64px;
+  .main__products,
+  .main__products-catalog {
+    margin-bottom: 70px;
+  }
+
+  .main__products-catalog{
+    margin-top: 96px;
   }
   
   .main__products-title {
@@ -14,6 +19,14 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     column-gap: 60px;
+    row-gap: 95px;
+    padding-left: 0;
+  }
+
+  .main__products-list--catalog{
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    column-gap: 0;
     row-gap: 95px;
     padding-left: 0;
   }
