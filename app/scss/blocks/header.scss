@@ -31,8 +31,7 @@
 
   
   .search-form__button {
-    background: #fff;
-    padding-left: 40px;
+    background: #efefef;
     border: none;
     cursor: pointer;
     outline: none;
@@ -41,6 +40,7 @@
   .search-form__field {
     border: none;
     outline: none;
+    background: #efefef;
     padding: 13px 20px 13px 20px;
 }
 
@@ -138,10 +138,6 @@
 
   .search-form__button{
     padding-left: 0px;
-  }
-
-  .search-form__field{
-    background: #efefef;
   }
 
   .header__bar-list{

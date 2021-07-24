@@ -48,7 +48,8 @@
     font-weight: 400;
     line-height: 14px;
     margin-bottom: 20px;
-
+    padding: 8px;
+    background: #efefef;
     color: $AboutPage;
 
     &:last-child{
@@ -60,7 +61,7 @@
       display: block;
       position: absolute;
       right: 20px;
-      transform: translateY(-200%) rotate(135deg);
+      transform: translateY(-150%) rotate(135deg);
       width: 5px;
       height: 5px;
       border-top: 3px solid $AboutPage;
@@ -73,4 +74,103 @@
 .catalog__filter-price{
     width: 223px;
     min-height: 89px;
+}
+
+/* Chekbox color*/
+
+.catalog__checkbox-text{
+    @include Font($mainFontFamily, $navFontSize, $navLineHeight, $weight, $darkGrey);
+    display: block;
+}
+
+.check__color-input{
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.check__color-input:checked{
+    background: url(Images/Svg/vec-check.svg) no-repeat;
+    background-size: cover;
+    width: 8px;
+    height: 5px;
+}
+
+.checkbox__color{
+    display: flex;
+    margin: 20px 0;
+}
+
+.check__box-red{
+    display: block;
+    width: 18px;
+    height: 18px;
+    background: #e94848;
+    margin-right: 10px;
+}
+.check__box-green{
+    display: block;
+    width: 18px;
+    height: 18px;
+    background-color: #43bf57;
+    margin-right: 10px;
+}
+.check__box-white{
+    display: block;
+    width: 18px;
+    height: 18px;
+    background-color: #e4e4e4;
+    margin-right: 10px;
+}
+.check__box-black{
+    display: block;
+    width: 18px;
+    height: 18px;
+    background-color: #3e3e3e;
+    margin-right: 10px;
+}
+.check__box-grey{
+    display: block;
+    width: 18px;
+    height: 18px;
+    background-color: #675a5a;
+    margin-right: 10px;
+}
+.check__box-brown{
+    display: block;
+    width: 18px;
+    height: 18px;
+    background-color: #864f4f;
+}
+
+/* Checkbox brand*/
+.check{
+    font-family: $mainFontFamily;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    padding-left: 30px;
+    margin-bottom: 14px;
+    color: $darkGrey;
+}
+.checkbox__brand{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0 15px;
+}
+
+.check__input{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+}
+
+.chekbox__name{
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    margin-left: -30px;
+    background: url(Images/Svg/Vector-about.svg) cover / no-repeat;
 }

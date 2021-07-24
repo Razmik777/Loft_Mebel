@@ -143,31 +143,70 @@
 
       <div class="catalog__checkbox">
         <span class="catalog__checkbox-text">Цвет</span>
-        <form class="catalog__checkbox-color">
-          <input type="checkbox" name="red">
-          <input type="checkbox" checked name="green">
-          <input type="checkbox" name="white">
-          <input type="checkbox" name="black">
-          <input type="checkbox" name="grey">
-          <input type="checkbox" name="brown">
-        </form>
+          <div class="checkbox__color">
+            <label class="check__color">
+              <input class="check__color-input" type="checkbox">
+                <span class="check_box check__box-red"></span>
+            </label>
+            <label class="check__color">
+              <input class="check__color-input" type="checkbox" checked>
+                <span class="check_box check__box-green"></span>
+            </label>
+            <label class="check__color">
+              <input class="check__color-input" type="checkbox">
+                <span class="check_box check__box-white"></span>
+            </label>
+            <label class="check__color">
+              <input class="check__color-input" type="checkbox">
+                <span class="check_box check__box-black"></span>
+            </label>
+            <label class="check__color">
+              <input class="check__color-input" type="checkbox">
+                <span class="check_box check__box-grey"></span>
+            </label>
+            <label class="check__color">
+              <input class="check__color-input" type="checkbox">
+                <span class="check_box check__box-brown"></span>
+            </label>
+          </div>
       </div>
 
       <div class="catalog__checkbox-brand">
         <span class="catalog__checkbox-text">Бренд</span>
-        <form>
-          <input type="checkbox" name="dins">Динс
-          <input type="checkbox" checked name="kusken">Кускен
-          <input type="checkbox" name="ebi">Эби
-          <input type="checkbox" name="reggio">Реджио
-          <input type="checkbox" name="sale">Сайле
-        </form>
+        <div class="checkbox__brand">
+          <label class="check">
+            <input class="check__input" type="checkbox" name="dins">
+            <span class="chekbox__name"></span>
+            Динс
+          </label>
+          <label class="check">
+            <input class="check__input" type="checkbox" checked name="kusken">
+            <span class="chekbox__name"></span>
+            Кускен
+          </label>
+          <label class="check">
+            <input class="check__input" type="checkbox" name="ebi">
+            <span class="chekbox__name"></span>
+            Эби
+          </label>
+          <label class="check">
+            <input class="check__input" type="checkbox" name="reggio">
+            <span class="chekbox__name"></span>
+            Реджио
+          </label>
+          <label class="check">
+            <input class="check__input" type="checkbox" name="sale">
+            <span class="chekbox__name"></span>
+            Сайле
+          </label>
+        </div>
           <a href="#" class="catalog__checkbox-link">Показать еще</a>
       </div>
-    </div> <!-- catalog__filter-innerend-->
+    </div> <!-- catalog__filter-inner end-->
 
     <section class="main__products-catalog">
       <h2 class="main__products-title hidden">Хиты продаж</h2>
+      
       <ul class="main__products-list main__products-list--catalog">
         <li class="products__item">
           <a href="#"><img src="Images/Products/5.png" class="products__img" alt="Шерона Barhat Grey" width="200" height="150">
