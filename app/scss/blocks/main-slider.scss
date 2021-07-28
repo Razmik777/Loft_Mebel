@@ -95,7 +95,7 @@
     cursor: pointer;
   }
 
-  @media screen and (max-width: $tabletSize) {
+  @media (max-width: $tabletSize) {
 
     .main__slider{
       position: relative;
@@ -187,32 +187,38 @@
     }
   }
 
-  @media screen and (max-width: $mobileSize) {
+  @media  (max-width: $mobileSize) {
     .main__slider {
+      position: relative;
       background:none;
-      min-width: 320px;
+      width: 768px;
+      height: auto;
     }
     
     .main__slider-intro{
-      background:url(../Images/Slider/slider-mob.png) center no-repeat;
-      background-size: cover;
-      width: 166px;
+      left: 123px;
+      background:url(../Images/Slider/slider-mob.png)  no-repeat;
       height: 126px;
+      position: relative;
 
       &:before{
         display: none;
       }
     }
 
+    .main__slider-title{
+      display: none;
+    }
+
     .main__slider-subtitle--tab {
       position: absolute;
-      top: 20px;
-      left: -220px;
+      top: 35px;
+      left: -120px;
       display: block;
       width: 204px;
       height: 56px;
       font-family: $mainFontFamily;
-      font-weight: 500;
+      font-weight: 700;
       font-size: 16px;
       line-height: 16px;
       text-align: left;
@@ -220,9 +226,9 @@
     }
 
     .main__slider-subtitle--mob{
-      position: relative;
-      top: 49px;
-      left: -221px;
+      position: absolute;
+      top: 70px;
+      left: -120px;
       display: inline-block;
       font-family: inherit;
       font-size: 10px;
@@ -232,7 +238,9 @@
       color: $darkGrey;
     }
 
-    .main__slider-link{
+    .main__slider-link,
+    .slider__buttons,
+    .main__slider-subtitle{
       display:none;
     }
   }

@@ -122,11 +122,10 @@
         <img src="Images/Svg/catalog.svg" class="catalog__navigation-pic" alt="Мягкая мебель">
       <a href="" class="catalog__navigation-link">Диваны</a>
     </nav>
-
+  <div class="catalog__inner">
     <div class="catalog__filter-inner">
-
+      <span class="catalog__filter-text">Раздел</span>
       <div class="catalog__filter">
-        <span class="catalog__filter-text">Раздел</span>
         <ul class="catalog__filter-list">
           <li class="catalog__filter-item">Гостинные</li>
           <li class="catalog__filter-item">Мягкая мебель</li>
@@ -134,11 +133,22 @@
         </ul>
       </div>
 
-      <div class="catalog__filter-price">
-        <label for="price">Цена</label>
-          <input type="range" id="price" name="цена" min="2000" max="102000" step="1" value="2000">
-          <span class="catalog__filter-min">2000р</span>
-          <span class="catalog__filter-max">102000р</span>
+      <span class="range__text">Цена</span>
+      <div class="range__filter-price">
+          <div class="range__container">
+            <div class="range__controls">
+              <div class="range__select">
+                <span class="bar"></span>
+                  <img src="Images/Svg/Ellipse.svg" class="toggle-min--pic" alt="toggle">
+                  <img src="Images/Svg/Ellipse.svg" class="toggle-max--pic" alt="toggle">
+              </div>
+            </div>
+          </div>
+          <div class="range__price">
+            <input type="text" class="min-price" name="min-price" value="2 000 ₽">
+            <span class="range__price-between"></span>
+            <input type="text" class="max-price" name="max-price" value="102 000 ₽ ">
+          </div>
       </div>
 
       <div class="catalog__checkbox">
@@ -180,7 +190,7 @@
             Динс
           </label>
           <label class="check">
-            <input class="check__input" type="checkbox" checked name="kusken">
+            <input class="check__input" type="checkbox" name="kusken" checked>
             <span class="chekbox__name"></span>
             Кускен
           </label>
@@ -354,6 +364,7 @@
         </li>
       </ul>
     </section>  <!-- main__products products end -->
+  </div>
   </main>
   
   <footer class="page__footer footer">

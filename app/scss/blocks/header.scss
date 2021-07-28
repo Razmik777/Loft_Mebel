@@ -91,7 +91,7 @@
     border-radius: 10px;
 }
 
-@media screen and (max-width: $tabletSize) {
+@media (max-width: $tabletSize) {
 
   .header {
     display: -webkit-box;
@@ -99,6 +99,7 @@
     flex-wrap: wrap;
     width: 100%;
     padding-top: 49px;
+    padding-left: 24px;
     padding-bottom: 39px;
   }
 
@@ -149,13 +150,13 @@
   }
 }
 
-@media screen and (max-width: $mobileSize) {
+@media (max-width: $mobileSize) {
 
   .header {
     display: flex;
     flex-wrap: wrap;
-    max-width: 320px;
-    padding: 15px;
+    max-width: 575px;
+    padding: 5px;
   }
 
   .header__inner{
@@ -171,11 +172,7 @@
   }
 
   .search-form__field{
-    width: 290px;
+    width: 286px;
     height: 40px;
-  }
-
-  .search-form__button{
-    padding: 18px;
   }
 }

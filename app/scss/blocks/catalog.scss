@@ -18,14 +18,16 @@
 .catalog__navigation-pic{
     margin: 0 10px;
 }
-
+.catalog__inner{
+    display: grid;
+    grid-template-columns: 3fr 9fr;
+    column-gap: 30px;
+}
 .catalog__filter-inner{
     display: flex;
     flex-direction: column;
     width: 263px;
     min-height: 591px;
-    float: left;
-    margin-right: 28px;
 }
 
 .catalog__filter{
@@ -143,6 +145,15 @@
     background-color: #864f4f;
 }
 
+.check__color-input:checked + .check_box{
+    background: url(../Images/Svg/vec-check.svg) center no-repeat;
+}
+
+.check__color-input:focus + .check_box{
+    background: url(../Images/Svg/vec-check.svg) center no-repeat;
+    
+}
+
 /* Checkbox brand*/
 .check{
     font-family: $mainFontFamily;
@@ -172,5 +183,23 @@
     width: 18px;
     height: 18px;
     margin-left: -30px;
-    background: url(Images/Svg/Vector-about.svg) cover / no-repeat;
+    background: url(../Images/Svg/checkbox.svg);
+}
+
+.check__input:checked + .chekbox__name{
+    background: url(../Images/Svg/vec-check.svg) center no-repeat;
+    border-radius: 3px;
+    background-color: #245462;
+}
+
+.check__input:checked:focus + .chekbox__name{
+    background: url(../Images/Svg/checkbox-ch.svg) center no-repeat;
+}
+
+.catalog__checkbox-link{
+    font-family: $mainFontFamily;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    color: #245462;
 }

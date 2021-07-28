@@ -18,6 +18,7 @@
   }
   
   .products__text {
+    display: block;
     font-family: $mainFontFamily;
     font-weight: 400;
     font-size: 11px;
@@ -47,9 +48,11 @@
     color: #ccc;
   }
 
-  @media screen and (max-width: $tabletSize){
+  @media (max-width: $tabletSize) {
       .products-item--tab{
         display: block;
+        width: 220px;
+        min-height: 296px;
       }
   
       .products__title{
@@ -65,7 +68,7 @@
       }
   }
 
-  @media screen and (max-width: $mobileSize) {
+  @media (max-width: $mobileSize) {
 
     .products-item--tab{
       display: none;

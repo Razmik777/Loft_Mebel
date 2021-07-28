@@ -32,7 +32,7 @@
     color:$red;
   }
 
-  @media screen and (max-width: $tabletSize) {
+  @media (max-width: $tabletSize) {
     .head__catalog-list{
       padding-left: 24px;
       margin-top: 16px;
@@ -67,11 +67,15 @@
     }
     
   }
-  @media screen and (max-width: $mobileSize) {
+  @media (max-width: $mobileSize) {
+
+    .head__catalog{
+      max-width: 575px;
+    }
 
     .head__catalog-list{
-      width: 320px;
       margin: 0;
+      margin-bottom: 28px;
     }
     
     .head__catalog-item{

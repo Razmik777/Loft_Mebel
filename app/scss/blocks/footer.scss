@@ -108,8 +108,14 @@
     vertical-align: middle;
     margin-right: 10px;
   }
+  
+  @media (max-width: $tabletSize) {
+    .footer{
+      max-width: 768px;
+    }
+  }
 
-  @media screen and (max-width: $mobileSize){
+  @media (max-width: $mobileSize){
     .page__footer{
       display: none;
     }
