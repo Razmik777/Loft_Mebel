@@ -28,7 +28,6 @@
   .header__search-form {
     display: flex;
   }
-
   
   .search-form__button {
     background: #efefef;
@@ -152,11 +151,21 @@
 
 @media (max-width: $mobileSize) {
 
+  .page__header{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-wrap: wrap;
+   width: 80%;
+   margin:auto;
+  }
+  
   .header {
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 575px;
     padding: 5px;
+  }
+
+  .header__logo-pic{
+    margin-right: 59px;
   }
 
   .header__inner{
@@ -174,5 +183,6 @@
   .search-form__field{
     width: 286px;
     height: 40px;
+    margin-bottom: 9px;
   }
 }

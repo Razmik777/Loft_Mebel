@@ -42,7 +42,7 @@
     display: none;
   }
   
-  .main__slider-subtitle--mob{
+  .main__slider-mob{
     display: none;
   }
 
@@ -106,7 +106,7 @@
       padding: 0;
     }
 
-    .main__slider-subtitle--mob{
+    .main__slider-mob{
       display: none;
     }
 
@@ -188,59 +188,52 @@
   }
 
   @media  (max-width: $mobileSize) {
-    .main__slider {
-      position: relative;
+
+    .main__slider{
       background:none;
-      width: 768px;
-      height: auto;
-    }
-    
-    .main__slider-intro{
-      left: 123px;
-      background:url(../Images/Slider/slider-mob.png)  no-repeat;
+      width: 230px;
       height: 126px;
-      position: relative;
-
-      &:before{
-        display: none;
-      }
+      margin-bottom: 54px;
     }
 
-    .main__slider-title{
+    .main__slider-title,
+    .main__slider-subtitle,
+    .main__slider-subtitle--tab,
+    .main__slider-link,
+    .slider__buttons {
       display: none;
     }
 
-    .main__slider-subtitle--tab {
-      position: absolute;
-      top: 35px;
-      left: -120px;
+    .main__slider-mob{
       display: block;
-      width: 204px;
-      height: 56px;
-      font-family: $mainFontFamily;
-      font-weight: 700;
-      font-size: 16px;
-      line-height: 16px;
-      text-align: left;
-      color: $darkGrey;
+    }
+
+    .main__slider-mob--descr{
+      margin-right: 15px;
+    }
+
+    .main__slider-title--mob{
+      @include Font($mainFontFamily, $mainFontSize, $navLineHeight, $weightNorm, $darkGrey);
     }
 
     .main__slider-subtitle--mob{
-      position: absolute;
-      top: 70px;
-      left: -120px;
-      display: inline-block;
       font-family: inherit;
       font-size: 10px;
       font-weight: 400;
       line-height: 10px;
-      margin-top: 5px;
+      margin-bottom: 15px;
+      margin-top: 0;
       color: $darkGrey;
     }
-
-    .main__slider-link,
-    .slider__buttons,
-    .main__slider-subtitle{
-      display:none;
+    
+    .main__slider-intro,
+    .main__slider-intro:before{
+      background: none;
     }
+
+    .main__slider-mob{
+      display: flex;
+    }
+
+
   }

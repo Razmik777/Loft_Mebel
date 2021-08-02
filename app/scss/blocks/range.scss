@@ -30,12 +30,19 @@
     position: absolute;
     left: 22px;
     top: -2px;
+    cursor: pointer;
 }
 
 .toggle-max--pic{
     position: absolute;
     right: 32px;
     top: -2px;
+    cursor: pointer;
+}
+
+.range__price{
+    display: flex;
+    justify-content: space-around;
 }
 
 .range__price input{
@@ -46,16 +53,16 @@
     min-height: 28px;
     background: #ececec;
     border: none;
+    outline: none;
     text-align: center;
-
 }
 
+
 .range__price-between{
-    display: inline-block;
+    font-size: 20px;
+    font-weight: 700;
     width: 19px;
-    height: 2px;
-    margin: 0 2px;
+    padding: 9px 0 11px;
     text-align: center;
-    vertical-align: middle;
-    color: $darkGrey;
+    font-size: 16px;
 }

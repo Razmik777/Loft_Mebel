@@ -16,6 +16,7 @@
 @import "blocks/support.scss";
 @import "blocks/catalog.scss";
 @import "blocks/range.scss";
+@import "blocks/checkbox.scss";
 
 /* Общие стили */
 
@@ -46,14 +47,13 @@ a {
 @media screen and (max-width: $tabletSize) {
   .wrapper {
     width: 720px;
-    margin: 0 20px;
   }
 }
 
 @media screen and (max-width: $mobileSize) {
   .wrapper {
+    width: 767px;
     min-width: 320px;
-    margin: 0 20px;
   }
 }
 
