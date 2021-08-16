@@ -11,130 +11,153 @@
 
   <!-- header start -->
   <header class="page__header header">
+    <div class="header__inner">
+      <div class="header__logo logo">
+        <a href="index.html" class="header__logo-link" aria-label="Логотип">
+          <img src="Images/Svg/menu-icon.svg" class="header__logo-menu" alt="menu">
+          <img src="Images/Logo/LOGO.svg" class="header__logo-pic" alt="logo">
+        </a>
+      </div>
 
-    <div class="header__logo logo">
-      <a href="#" class="header__logo-link" aria-label="Логотип">
-        <img src="Images/Logo/LOGO.svg" class="header__logo-pic" alt="logo">
-      </a>
-    </div>
+      <nav class="header__navigation nav">
+        <ul class="nav__list-main">
+          <li class="nav__item">
+            <a href="index.html" class="nav__link" aria-label="Главная">Главная</a>
+          </li>
+          <li class="nav__item">
+            <a href="About_us.html" class="nav__link" aria-label="О Нас">О нас</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link" aria-label="Контакты">Контакты</a>
+          </li>
+        </ul>
+      </nav>
 
-    <nav class="header__navigation nav">
+        <div class="header__search-container">
+          <form action="#" class="header__search-form search-form" method="get">
+            <button type="submit" class="search-form__button" aria-label="Search product"><img src="Images/Svg/search.svg" alt="Search"></button>
+            <input type="search" class="search-form__field" placeholder="Поиск">
+          </form>
+        </div>
 
-      <ul class="nav__list-main">
-        <li class="nav__item">
-          <a href="#" class="nav__link" aria-label="Главная">Главная</a>
-        </li>
-        <li class="nav__item">
-          <a href="#" class="nav__link" aria-label="О Нас">О Нас</a>
-        </li>
-        <li class="nav__item">
-          <a href="#" class="nav__link" aria-label="Контакты">Контакты</a>
-        </li>
-      </ul>
-    </nav>
-
-    <div class="header__search-container">
-      <form action="#" class="header__search-form search-form" method="get">
-        <button type="submit" class="search-form__button" aria-label="Search product"><img src="Images/Svg/search.svg" alt="Search"></button>
-        <input type="search" class="search-form__field" placeholder="Поиск">
-      </form>
-    </div>
-
-    <div class="header__info">
-      <ul class="header__info-list">
-        <li class="header__info-item">
-          <a href="#" class="header__info-link" aria-label="Связаться с нами">
-            <img src="Images/Svg/phone-card.svg" class="header__info-pic" alt="Telephone Number">
-            <span class="info">8(964)89 99 119</span>
-          </a>
-        </li>
-        <li class="header__info-item">
-          <a href="#" class="header__info-link" aria-label="Доставка">
-            <img src="Images/Svg/delivery-card.svg" class="header__info-pic" alt="Delivery">
-            <span class="delivery">Доставка</span>
-          </a>
-        </li>
-        <li class="header__info-item">
-          <a href="#" class="header__info-link">
-            <img src="Images/Svg/wishlist.svg" class="header__info-pic" alt="whishlist"></a>
-        </li>
-        <li class="header__info-item">
-          <a href="#" class="header__info-link">
-            <img src="Images/Svg/bag.svg" class="header__info-pic" alt="bag"></a>
-        </li>
-        <li class="header__info-item">
-          <a href="#" class="header__info-link">
-            <img src="Images/Svg/profile.svg" class="header__info-pic" alt="profile"></a>
-        </li>
+        <div class="header__info-links">
+          <ul class="header__info-list">
+            <li class="header__info-item header__info-item--tel">
+              <a href="#" class="header__info-link" aria-label="Связаться с нами">
+                <img src="Images/Svg/phone-card.svg" class="header__info-pic" alt="Telephone Number">
+                  <span class="info">8(964)89 99 119</span>
+              </a>
+            </li>
+            <li class="header__info-item">
+              <a href="#" class="header__info-link" aria-label="Доставка">
+                <img src="Images/Svg/delivery-card.svg" class="header__info-pic" alt="Delivery">
+                  <span class="info">Доставка</span>
+              </a>
+            </li>
           </ul>
         </div>
+
+        <div class="header__bar">
+          <ul class="header__bar-list">
+            <li class="header__bar-item">
+              <a href="#" class="header__bar-link">
+                <img src="Images/Svg/wishlist.svg" class="header__bar-pic" alt="whishlist"></a>
+            </li>
+            <li class="header__bar-item">
+              <a href="#" class="header__bar-link header__bar-link--cart">
+                <img src="Images/Svg/bag.svg" class="header__bar-pic" alt="bag"></a>
+            </li>
+            <li class="header__bar-item">
+              <a href="#" class="header__bar-link">
+                <img src="Images/Svg/profile.svg" class="header__bar-pic" alt="profile"></a>
+            </li>
+          </ul>
+        </div>
+    </div>  <!-- header__inner end -->
   </header>  <!-- header end -->
 
-    <div class="header__catalog catalog">
-      <ul class="header__catalog-list">
-        <li class="header__catalog-item">
-          <a href="#" class="header__catalog-link">Кухни</a>
-        </li>
-        <li class="header__catalog-item">
-          <a href="#" class="header__catalog-link">Спальни</a>
-        </li>
-        <li class="header__catalog-item">
-          <a href="#" class="header__catalog-link">Гостинные</a>
-        </li>
-        <li class="header__catalog-item">
-          <a href="#" class="header__catalog-link">Прихожие</a>
-        </li>
-        <li class="header__catalog-item">
-          <a href="#" class="header__catalog-link">Офисная мебель</a>
-        </li>
-        <li class="header__catalog-item">
-          <a href="#" class="header__catalog-link">Детская</a>
-        </li>
-        <li class="header__catalog-item">
-          <a href="#" class="header__catalog-link">Акция</a>
-        </li>
-      </ul>
-    </div>  <!-- header__catalog end -->
-
-
+  <div class="head__catalog catalog">
+    <ul class="head__catalog-list">
+      <li class="head__catalog-item">
+        <a href="#" class="head__catalog-link--mob">
+          <img class="head__catalog-pic" src="Images/Svg/Vector-mob.svg" alt="Акция"><span>Акция</span></a>
+      </li>
+      <li class="head__catalog-item">
+        <a href="#" class="head__catalog-link--mob">
+          <img class="head__catalog-pic" src="Images/Svg/new-mob.svg" alt="Новинки"><span>Новинки</span></a>
+      </li>
+      <li class="head__catalog-item">
+        <a href="#" class="head__catalog-link">
+          <img class="head__catalog-pic" src="Images/Svg/kitchen.svg" alt="Кухни"><span>Кухни</span></a>
+      </li>
+      <li class="head__catalog-item">
+        <a href="#" class="head__catalog-link">
+          <img class="head__catalog-pic" src="Images/Svg/bedroom.svg" alt="Спальни"><span>Спальни</span></a>
+      </li>
+      <li class="head__catalog-item">
+        <a href="#" class="head__catalog-link">
+          <img class="head__catalog-pic" src="Images/Svg/livingroom.svg" alt="Гостинные"><span>Гостинные</span></a>
+      </li>
+      <li class="head__catalog-item">
+        <a href="#" class="head__catalog-link">
+          <img class="head__catalog-pic" src="Images/Svg/closet.svg" alt="Прихожие"><span>Прихожие</span></a>
+      </li>
+      <li class="head__catalog-item">
+        <a href="#" class="head__catalog-link head__catalog-link--last"><img class="head__catalog-pic" src="Images/Svg/office.svg" alt="Офисная мебель"><span>Офисная&nbspмебель</span>
+        <img src="Images/Svg/etc.svg" class="head__catalog-menu" alt="menu"></a>
+      </li>
+      <li class="head__catalog-item">
+        <a href="#" class="head__catalog-link">
+          <img class="head__catalog-pic" src="Images/Svg/childrensroom.svg" alt="Детская"><span>Детская</span></a>
+      </li>
+      <li class="head__catalog-item">
+        <a href="#" class="head__catalog-link head__catalog-link--red">Акция
+          <img src="Images/Svg/etc.svg" class="head__catalog-menu--main" alt="menu">
+        </a>
+      </li>
+    </ul>
+  </div> <!-- header__catalog end -->
 
   <main class="page__main main">
 
-    <nav class="main__navigation navigation">
-      <a href="main.html" class="main__navigation-link">Главная</a>
-      <a href="#" class="main__navigation-link">Гостинные</a>
-      <a href="#" class="main__navigation-link">Мягкая мебель</a>
-      <a href="" class="main__navigation-link">Диваны</a>
+    <nav class="catalog__navigation">
+      <a href="main.html" class="catalog__navigation-link">Главная</a>
+        <img src="Images/Svg/catalog.svg" class="catalog__navigation-pic" alt="Главная">
+      <a href="#" class="catalog__navigation-link">Гостинные</a>
+        <img src="Images/Svg/catalog.svg" class="catalog__navigation-pic" alt="Гостинные">
+      <a href="#" class="catalog__navigation-link">Мягкая мебель</a>
+        <img src="Images/Svg/catalog.svg" class="catalog__navigation-pic" alt="Мягкая мебель">
+      <a href="" class="catalog__navigation-link">Диваны</a>
     </nav>
 
-    <section class="main__slider slider">
+    <section class="product__slider slider">
 
-      <div class="main__slider-intro">
-        <div class="main__slider-images">
-          <img src="Images/Product-card/sofa.jpg" class="main__slider-img" alt="Динс Velvet Yellow">
-          <img src="Images/Product-card/sm-1.jpg" class="main__slider-img" alt="Динс Velvet Yellow">
-          <img src="Images/Product-card/sm-2.jpg" class="main__slider-img" alt="Динс Velvet Yellow">
-          <img src="Images/Product-card/sm-3.jpg" class="main__slider-img" alt="Динс Velvet Yellow">
-          <img src="Images/Product-card/sm-4.jpg" class="main__slider-img" alt="Динс Velvet Yellow">
-          <img src="Images/Product-card/sm-5.jpg" class="main__slider-img" alt="Динс Velvet Yellow">
+      <div class="product__slider-intro">
+        <div class="product__slider-images">
+          <img src="Images/Product-card/sofa.jpg" class="product__slider-img" alt="Динс Velvet Yellow">
+          <img src="Images/Product-card/sm-1.jpg" class="product__slider-img" alt="Динс Velvet Yellow">
+          <img src="Images/Product-card/sm-2.jpg" class="product__slider-img" alt="Динс Velvet Yellow">
+          <img src="Images/Product-card/sm-3.jpg" class="product__slider-img" alt="Динс Velvet Yellow">
+          <img src="Images/Product-card/sm-4.jpg" class="product__slider-img" alt="Динс Velvet Yellow">
+          <img src="Images/Product-card/sm-5.jpg" class="product__slider-img" alt="Динс Velvet Yellow">
         </div>
 
-        <div class="main__slider-name">
-          <div class="main__slider-rait">
+        <div class="product__slider-name">
+          <div class="product__slider-rait">
             <img src="Images/Product-card/Vector.svg" class="slider__rait-img" alt="star">
             <img src="Images/Product-card/Vector.svg" class="slider__rait-img" alt="star">
             <img src="Images/Product-card/Vector.svg" class="slider__rait-img" alt="star">
             <img src="Images/Product-card/Vector.svg" class="slider__rait-img" alt="star">
             <img src="Images/Product-card/Vector-last.svg" class="slider__rait-img" alt="star">
           </div>
-          <h2 class="main__slider-title">Динс Velvet Yellow</h2>
-          <span class="main__slider-subtitle">Диваны</span>
-          <span class="main__slider-price">4 690₽</span>
-          <a href="#" class="main__slider-button">Купить</a>
-          <a href="#" class="main__slier-link">Добавить в желаемое</a>
+          <h2 class="product__slider-title">Динс Velvet Yellow</h2>
+            <span class="product__slider-subtitle">Диваны</span>
+            <span class="product__slider-price">4 690₽</span>
+            <a href="#" class="product__slider-button">Купить</a>
+            <a href="#" class="product__slier-link">Добавить в желаемое</a>
         </div>
 
-        <div class="main__slider-settings">
+        <div class="product__slider-settings">
           <ul class="slider__settings-list">
             <li class="slider__settings-item">Цвет
               <span class="slider__settings-color"></span>
@@ -147,9 +170,9 @@
             </li>
           </ul>
 
-          <div class="main__slider-descr">
-            <span class="main__slider-title">Описание</span>
-            <p class="main__slider-text">Лаконичные линии и простые формы, безупречный стиль и индивидуальность – все это диван «Динс». Сдержанный скандинавский дизайн украсит любую современную обстановку. Элегантность, комфорт и функциональность, собранные воедино – «Динс» просто создан для размеренного отдыха в кругу семьи или компании друзей!</p>
+          <div class="product__slider-descr">
+            <span class="product__slider-title">Описание</span>
+            <p class="product__slider-text">Лаконичные линии и простые формы, безупречный стиль и индивидуальность – все это диван «Динс». Сдержанный скандинавский дизайн украсит любую современную обстановку. Элегантность, комфорт и функциональность, собранные воедино – «Динс» просто создан для размеренного отдыха в кругу семьи или компании друзей!</p>
           </div>
         </div>
       </div>  <!-- main__slider-intro end -->
