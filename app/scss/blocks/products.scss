@@ -1,20 +1,11 @@
+  .products__item{
+    position: relative;
+  }
+  
   .products__title {
     @include Font($mainFontFamily, $mainFontSize, $mainLineHeight, $weightPr, $darkGrey);
     margin: 54px 0 6px;
     font-style: normal;
-
-    &:before {
-      content: "";
-      position: absolute;
-      top: -210px;
-      right: 21px;
-      display: block;
-      background: url(../Images/Svg/like.svg) no-repeat;
-      background-size: cover;
-      width: 18px;
-      height: 15px;
-      z-index: 1;
-    }
   }
   
   .products__text {

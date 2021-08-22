@@ -4,7 +4,7 @@
   }
 
   .main__products-catalog{
-    margin-top: 96px;
+    margin-top: 160px;
   }
   
   .main__products-title {
@@ -30,7 +30,11 @@
     row-gap: 95px;
     padding-left: 0;
   }
-  
+
+  .main__products-item{
+    position: relative;
+  }
+
   .main__products-descr {
     display: grid;
     position: relative;
@@ -42,6 +46,21 @@
     display: flex;
     align-items: center;
     margin-right: 7px;
+  }
+
+  .main__products-like{
+    position: absolute;
+    top: -56px;
+    right: 20px;
+    cursor: pointer;
+  }
+
+  .like-red{
+    position: absolute;
+    top: -56px;
+    right: 30px;
+    background:url(../Images/Svg/like-red.svg) no-repeat;
+    cursor: pointer;
   }
 
   @media (max-width: $tabletSize) {
