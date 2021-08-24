@@ -52,15 +52,22 @@
     position: absolute;
     top: -56px;
     right: 20px;
+    width: 19px;
+    height: 17px;
     cursor: pointer;
-  }
+    
 
-  .like-red{
-    position: absolute;
-    top: -56px;
-    right: 30px;
-    background:url(../Images/Svg/like-red.svg) no-repeat;
-    cursor: pointer;
+    &_clicked {
+      position: absolute;
+      top: -56px;
+      right: 20px;
+      width: 19px;
+      height: 17px;
+      cursor: pointer;
+      stroke-width: 10%;
+      stroke:red;
+      transition: .3s linear;
+    }
   }
 
   @media (max-width: $tabletSize) {
