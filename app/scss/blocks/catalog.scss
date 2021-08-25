@@ -84,5 +84,14 @@
     position:absolute;
     top: -45px;
     right: 80px;
+    width: 19px;
+    height: 17px;
     cursor: pointer;
+
+    &_clicked {
+      cursor: pointer;
+      stroke-width: 10%;
+      stroke:red;
+      transition: .3s linear;
+    }
 }

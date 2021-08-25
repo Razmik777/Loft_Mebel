@@ -3,6 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
   <link rel="stylesheet" type="text/css" href="css/app.min.css">
 	<title>Loft Мебель</title>
 </head>
@@ -114,7 +115,32 @@
 
   <main class="page__main main">
 
-    <section class="main__slider slider">
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <div class="swiper-image">
+            <h1 class="main__slider-title">Loft мебель</h1>
+            <h2 class="main__slider-subtitle">Современная и удобная мебель в Анапе</h2>
+            <a class="main__slider-link" href="#">Смотреть каталог</a>
+            <img src="Images/Slider/slider.jpg">
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="swiper-image">
+            <img src="Images/Slider/slider.jpg">
+          </div>
+        </div>
+      </div>
+
+      <div class="slider__buttons">
+        <button class="slider__button--next"><img src="Images/Slider/active.svg" alt="prev"></button>
+        <button class="slider__button--prev"><img src="Images/Slider/prev-btn.svg" alt="next"></button>
+      </div>
+    </div>
+
+    <!-- <section class="main__slider slider">
       <div class="main__slider-intro">
         <h1 class="main__slider-title">Loft мебель</h1>
         <h2 class="main__slider-subtitle">Современная и удобная мебель в Анапе</h2>
@@ -134,7 +160,7 @@
         <button class="slider__button slider__button--prev"><img src="Images/Slider/prev-btn.svg" alt="next"></button>
       </div>
       </div>
-    </section>
+    </section> -->
 
     <section class="main__products products">
       <h2 class="main__products-title">Хиты продаж</h2>
@@ -703,6 +729,7 @@
       </div>
   </footer>
   </div>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="../app/js/app.min.js"></script>
 </body>
 </html>

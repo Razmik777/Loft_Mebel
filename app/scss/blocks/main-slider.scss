@@ -12,14 +12,12 @@
   
   .main__slider-title {
     position: absolute;
-    top: -9px;
-    left: 0px;
     font-family: Playfair Display;
     font-size: 50px;
     font-weight: 700;
     margin: 110px 0 15px 120px;
     line-height: 53px;
-    width: 216px;
+    width: 140px;
     color:#3C3C3C;
     text-transform: uppercase;
   }
@@ -73,18 +71,19 @@
   
   .slider__button--next{
     position: absolute;
-    top: 205px;
+    bottom: 217px;
     left: 38px;
     width: 30px;
     height: 30px;
     background: rgba(157, 157, 157, 0.28);
     border: none;
     cursor: pointer;
+    z-index: 5;
   }
   
   .slider__button--prev{
     position: absolute;
-    top: 205px;
+    bottom: 217px;
     right: 38px;
     width: 30px;
     height: 30px;
@@ -93,6 +92,7 @@
     transform: rotate(180deg);
     color: $black;
     cursor: pointer;
+    z-index: 5;
   }
 
   @media (max-width: $tabletSize) {
