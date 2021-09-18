@@ -1,27 +1,40 @@
 'use strict';
 
 const likeBtn = document.querySelectorAll('.main__products-like');
-const likeBtn2 = document.querySelectorAll('.catalog__products-like');
+const likeBtnCatalog = document.querySelectorAll('.catalog__products-like');
 
 likeBtn.forEach(function(item) {
     item.addEventListener('click', () =>
         item.classList.toggle('main__products-like_clicked'));
 });
 
-likeBtn2.forEach(function(item) {
+likeBtnCatalog.forEach(function(item) {
     item.addEventListener('click', () =>
         item.classList.toggle('catalog__products-like_clicked'));
 });
 
 
-const swiper = new Swiper('.swiper-container', {
+const swiper = new Swiper('.swiper', {
     // Optional parameters
     direction: 'horizontal',
     loop: true,
   
     // Navigation arrows
     navigation: {
-      nextEl: '.slider__button--next',
-      prevEl: '.slider__button--prev',
+      nextEl: '.swiper__button--next',
+      prevEl: '.swiper__button--prev',
     },
-  });
+});
+
+const swiperTab = new Swiper('.swiper__tab', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper__button--next',
+    prevEl: '.swiper__button--prev',
+  },
+});
+  

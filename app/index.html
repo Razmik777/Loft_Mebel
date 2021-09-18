@@ -115,14 +115,14 @@
 
   <main class="page__main main">
 
-    <div class="swiper-container">
+    <div class="swiper">
       <div class="swiper-wrapper">
         <!-- Slides -->
         <div class="swiper-slide">
           <div class="swiper-image">
-            <h1 class="main__slider-title">Loft мебель</h1>
-            <h2 class="main__slider-subtitle">Современная и удобная мебель в Анапе</h2>
-            <a class="main__slider-link" href="#">Смотреть каталог</a>
+            <h1 class="swiper__title">Loft мебель</h1>
+            <h2 class="swiper__subtitle">Современная и удобная мебель в Анапе</h2>
+            <a class="swiper__link" href="#">Смотреть каталог</a>
             <img src="Images/Slider/slider.jpg">
           </div>
         </div>
@@ -132,35 +132,41 @@
             <img src="Images/Slider/slider.jpg">
           </div>
         </div>
-      </div>
+      </div> 
 
-      <div class="slider__buttons">
-        <button class="slider__button--next"><img src="Images/Slider/active.svg" alt="prev"></button>
-        <button class="slider__button--prev"><img src="Images/Slider/prev-btn.svg" alt="next"></button>
+      <div class="swiper__buttons">
+        <button class="swiper__button--next"><img src="Images/Slider/active.svg" alt="prev"></button>
+        <button class="swiper__button--prev"><img src="Images/Slider/prev-btn.svg" alt="next"></button>
       </div>
-    </div>
+    </div>   <!-- swiper end-->
 
-    <!-- <section class="main__slider slider">
-      <div class="main__slider-intro">
-        <h1 class="main__slider-title">Loft мебель</h1>
-        <h2 class="main__slider-subtitle">Современная и удобная мебель в Анапе</h2>
-        <h2 class="main__slider-subtitle--tab">Современная<br>и&nbspудобная&nbspмебель</h2>
-        <div class="main__slider-mob">
-          <div class="main__slider-mob--descr">
-            <h2 class="main__slider-title--mob">Современная<br>и&nbspудобная&nbspмебель</h2>
-            <p class="main__slider-subtitle--mob">С доставкой<br> по Краснодарскому&nbspкраю</p>
-          </div>
-          <div class="main__slider-mob--image">
-            <img src="Images/Slider/mob-bg.png" class="main__slider-mob--img">
+    <div class="swiper__tab">
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <div class="swiper-image_tab">
+            <h2 class="swiper__subtitle-tab">Современная<br>и&nbspудобная&nbspмебель</h2>
+            <a class="swiper__link" href="#">Смотреть каталог</a>
+            <img src="Images/Slider/bg-slider.jpg" class="swiper__tab-img" width="720" height="257">
+            <img src="Images/Slider/sofa.png" class="swiper__tab-img1" width="437" height="209">
+            <img src="Images/Slider/image-4.png" class="swiper__tab-img2" width="90" height="44">
           </div>
         </div>
-        <a class="main__slider-link" href="#">Смотреть каталог</a>
-      <div class="slider__buttons">
-        <button class="slider__button slider__button--next"><img src="Images/Slider/active.svg" alt="prev"></button>
-        <button class="slider__button slider__button--prev"><img src="Images/Slider/prev-btn.svg" alt="next"></button>
+
+        <div class="swiper-slide">
+          <div class="swiper-image_tab">
+            <img src="Images/Slider/bg-slider.jpg" class="swiper__tab-img" width="720" height="257">
+            <img src="Images/Slider/sofa.png" class="swiper__tab-img1" width="437" height="209">
+            <img src="Images/Slider/image-4.png" class="swiper__tab-img2" width="90" height="44">
+          </div>
+        </div>
+      </div> 
+
+      <div class="swiper__buttons">
+        <button class="swiper__button--next"><img src="Images/Slider/active.svg" alt="prev"></button>
+        <button class="swiper__button--prev"><img src="Images/Slider/prev-btn.svg" alt="next"></button>
       </div>
-      </div>
-    </section> -->
+    </div> 
 
     <section class="main__products products">
       <h2 class="main__products-title">Хиты продаж</h2>
@@ -214,7 +220,7 @@
             5.42h1zM5.42 1.5a3.92 3.92 0 012.77 1.148l.708-.707A4.92 
             4.92 0 005.419.5v1zM1.5 5.42A3.92 3.92 0 015.42 1.5v-1A4.92 4.92 0 00.5 5.42h1zm1.148 2.77A3.92 3.92 0 011.5 5.42h-1a4.92 4.92 0 001.44 3.478l.708-.707z" 
             fill="#000"/></svg>
-          <a href="#"><img src="Images/Products/3.png" class="products__img" alt="Динс Velvet Yellow" width="200" height="150">
+          <a href="product-card.html"><img src="Images/Products/3.png" class="products__img" alt="Динс Velvet Yellow" width="200" height="150">
           <div class="main__products-descr">
             <div class="main__products-promo">
               <img src="Images/Svg/Vector.svg" class="promo__img" alt="Promo" width="19" height="19">
