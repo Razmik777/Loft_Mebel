@@ -1,0 +1,48 @@
+.about{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 18px;
+}
+
+.about-text{
+    position: relative;
+    top: 89px;
+    left: 120px;
+    width: 50%;
+}
+
+.text{
+    width: 420px;
+    font-family: $mainFontFamily;
+    font-size: 12px;
+    font-weight: $weight;
+    line-height: 14px;
+    color: #245462;
+}
+
+.about__title{
+    font-family: $mainFontFamily;
+    font-size: 24px;
+    font-weight: $weight;
+    line-height: 28px;
+    margin-right: 15px 0;
+    color: $darkGrey;
+}
+
+.about__descr{
+    width: 420px;
+    height: auto;
+    font-family: $mainFontFamily;
+    font-size: $navFontSize;
+    font-weight: $weight;
+    line-height: 20px;
+    margin-right: 0;
+    color: #686868;
+}
+.about__image{
+    position: relative;
+    top: 0;
+    right: 0;
+    width: 50%;
+}
