@@ -14,7 +14,7 @@ const gulp         = require('gulp');
 const ghPages      = require('gh-pages');
 
 gulp.task('deploy', function() {
-    return gulp.src('dist/**/*')
+    return gulp.src('./dist/**/*')
         .pipe(ghPages());
 });
 
