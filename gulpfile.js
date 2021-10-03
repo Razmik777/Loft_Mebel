@@ -80,7 +80,7 @@ exports.build       = series(cleandist, styles, scripts, images, buildcopy);
 exports.start       = parallel(styles, scripts, browsersync, startwatch);
 
 const gulp = require('gulp');
-const ghPages = require('gulp-gh-pages');
+const ghPages = require('gh-pages');
 
 gulp.task('deploy', function() {
     return gulp.src('./dist/**/*')
