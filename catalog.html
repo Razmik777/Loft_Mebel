@@ -11,147 +11,230 @@
 
   <!-- header start -->
   <header class="page__header header">
+    <div class="header__inner">
+      <div class="header__logo logo">
+        <a href="index.html" class="header__logo-link" aria-label="Логотип">
+          <img src="Images/Svg/menu-icon.svg" class="header__logo-menu" alt="menu">
+          <img src="Images/Logo/LOGO.svg" class="header__logo-pic" alt="logo">
+        </a>
+      </div>
 
-    <div class="header__logo logo">
-      <a href="#" class="header__logo-link" aria-label="Логотип">
-        <img src="Images/Logo/LOGO.svg" class="header__logo-pic" alt="logo">
-      </a>
-    </div>
+      <nav class="header__navigation nav">
+        <ul class="nav__list-main">
+          <li class="nav__item">
+            <a href="index.html" class="nav__link" aria-label="Главная">Главная</a>
+          </li>
+          <li class="nav__item">
+            <a href="About_us.html" class="nav__link" aria-label="О Нас">О нас</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link" aria-label="Контакты">Контакты</a>
+          </li>
+        </ul>
+      </nav>
 
-    <nav class="header__navigation nav">
+        <div class="header__search-container">
+          <form action="#" class="header__search-form search-form" method="get">
+            <button type="submit" class="search-form__button" aria-label="Search product"><img src="Images/Svg/search.svg" alt="Search"></button>
+            <input type="search" class="search-form__field" placeholder="Поиск">
+          </form>
+        </div>
 
-      <ul class="nav__list-main">
-        <li class="nav__item">
-          <a href="#" class="nav__link" aria-label="Главная">Главная</a>
-        </li>
-        <li class="nav__item">
-          <a href="#" class="nav__link" aria-label="О Нас">О Нас</a>
-        </li>
-        <li class="nav__item">
-          <a href="#" class="nav__link" aria-label="Контакты">Контакты</a>
-        </li>
-      </ul>
-    </nav>
-
-    <div class="header__search-container">
-      <form action="#" class="header__search-form search-form" method="get">
-        <button type="submit" class="search-form__button" aria-label="Search product"><img src="Images/Svg/search.svg" alt="Search"></button>
-        <input type="search" class="search-form__field" placeholder="Поиск">
-      </form>
-    </div>
-
-    <div class="header__info">
-      <ul class="header__info-list">
-        <li class="header__info-item">
-          <a href="#" class="header__info-link" aria-label="Связаться с нами">
-            <img src="Images/Svg/phone-card.svg" class="header__info-pic" alt="Telephone Number">
-            <span class="info">8(964)89 99 119</span>
-          </a>
-        </li>
-        <li class="header__info-item">
-          <a href="#" class="header__info-link" aria-label="Доставка">
-            <img src="Images/Svg/delivery-card.svg" class="header__info-pic" alt="Delivery">
-            <span class="delivery">Доставка</span>
-          </a>
-        </li>
-        <li class="header__info-item">
-          <a href="#" class="header__info-link">
-            <img src="Images/Svg/wishlist.svg" class="header__info-pic" alt="whishlist"></a>
-        </li>
-        <li class="header__info-item">
-          <a href="#" class="header__info-link">
-            <img src="Images/Svg/bag.svg" class="header__info-pic" alt="bag"></a>
-        </li>
-        <li class="header__info-item">
-          <a href="#" class="header__info-link">
-            <img src="Images/Svg/profile.svg" class="header__info-pic" alt="profile"></a>
-        </li>
+        <div class="header__info-links">
+          <ul class="header__info-list">
+            <li class="header__info-item header__info-item--tel">
+              <a href="#" class="header__info-link" aria-label="Связаться с нами">
+                <img src="Images/Svg/phone-card.svg" class="header__info-pic" alt="Telephone Number">
+                  <span class="info">8(964)89 99 119</span>
+              </a>
+            </li>
+            <li class="header__info-item">
+              <a href="#" class="header__info-link" aria-label="Доставка">
+                <img src="Images/Svg/delivery-card.svg" class="header__info-pic" alt="Delivery">
+                  <span class="info">Доставка</span>
+              </a>
+            </li>
           </ul>
         </div>
+
+        <div class="header__bar">
+          <ul class="header__bar-list">
+            <li class="header__bar-item">
+              <a href="#" class="header__bar-link">
+                <img src="Images/Svg/wishlist.svg" class="header__bar-pic" alt="whishlist"></a>
+            </li>
+            <li class="header__bar-item">
+              <a href="#" class="header__bar-link header__bar-link--cart">
+                <img src="Images/Svg/bag.svg" class="header__bar-pic" alt="bag"></a>
+            </li>
+            <li class="header__bar-item">
+              <a href="#" class="header__bar-link">
+                <img src="Images/Svg/profile.svg" class="header__bar-pic" alt="profile"></a>
+            </li>
+          </ul>
+        </div>
+    </div>  <!-- header__inner end -->
   </header>  <!-- header end -->
 
-    <div class="header__catalog catalog">
-      <ul class="header__catalog-list">
-        <li class="header__catalog-item">
-          <a href="#" class="header__catalog-link">Кухни</a>
-        </li>
-        <li class="header__catalog-item">
-          <a href="#" class="header__catalog-link">Спальни</a>
-        </li>
-        <li class="header__catalog-item">
-          <a href="#" class="header__catalog-link">Гостинные</a>
-        </li>
-        <li class="header__catalog-item">
-          <a href="#" class="header__catalog-link">Прихожие</a>
-        </li>
-        <li class="header__catalog-item">
-          <a href="#" class="header__catalog-link">Офисная мебель</a>
-        </li>
-        <li class="header__catalog-item">
-          <a href="#" class="header__catalog-link">Детская</a>
-        </li>
-        <li class="header__catalog-item">
-          <a href="#" class="header__catalog-link">Акция</a>
-        </li>
-      </ul>
-    </div>  <!-- header__catalog end -->
-
+      <div class="head__catalog catalog">
+        <ul class="head__catalog-list">
+          <li class="head__catalog-item">
+            <a href="#" class="head__catalog-link--mob">
+              <img class="head__catalog-pic" src="Images/Svg/Vector-mob.svg" alt="Акция"><span>Акция</span></a>
+          </li>
+          <li class="head__catalog-item">
+            <a href="#" class="head__catalog-link--mob">
+              <img class="head__catalog-pic" src="Images/Svg/new-mob.svg" alt="Новинки"><span>Новинки</span></a>
+          </li>
+          <li class="head__catalog-item">
+            <a href="#" class="head__catalog-link">
+              <img class="head__catalog-pic" src="Images/Svg/kitchen.svg" alt="Кухни"><span>Кухни</span></a>
+          </li>
+          <li class="head__catalog-item">
+            <a href="#" class="head__catalog-link">
+              <img class="head__catalog-pic" src="Images/Svg/bedroom.svg" alt="Спальни"><span>Спальни</span></a>
+          </li>
+          <li class="head__catalog-item">
+            <a href="#" class="head__catalog-link">
+              <img class="head__catalog-pic" src="Images/Svg/livingroom.svg" alt="Гостинные"><span>Гостинные</span></a>
+          </li>
+          <li class="head__catalog-item">
+            <a href="#" class="head__catalog-link">
+              <img class="head__catalog-pic" src="Images/Svg/closet.svg" alt="Прихожие"><span>Прихожие</span></a>
+          </li>
+          <li class="head__catalog-item">
+            <a href="#" class="head__catalog-link head__catalog-link--last"><img class="head__catalog-pic" src="Images/Svg/office.svg" alt="Офисная мебель"><span>Офисная&nbspмебель</span>
+            <img src="Images/Svg/etc.svg" class="head__catalog-menu" alt="menu"></a>
+          </li>
+          <li class="head__catalog-item">
+            <a href="#" class="head__catalog-link">
+              <img class="head__catalog-pic" src="Images/Svg/childrensroom.svg" alt="Детская"><span>Детская</span></a>
+          </li>
+          <li class="head__catalog-item">
+            <a href="#" class="head__catalog-link head__catalog-link--red">Акция
+              <img src="Images/Svg/etc.svg" class="head__catalog-menu--main" alt="menu">
+            </a>
+          </li>
+        </ul>
+      </div> <!-- header__catalog end -->
   <main class="page__main main">
 
-    <nav class="main__navigation navigation">
-      <a href="main.html" class="main__navigation-link">Главная</a>
-      <a href="#" class="main__navigation-link">Гостинные</a>
-      <a href="#" class="main__navigation-link">Мягкая мебель</a>
-      <a href="" class="main__navigation-link">Диваны</a>
+    <nav class="catalog__navigation">
+      <a href="main.html" class="catalog__navigation-link">Главная</a>
+        <img src="Images/Svg/catalog.svg" class="catalog__navigation-pic" alt="Главная">
+      <a href="#" class="catalog__navigation-link">Гостинные</a>
+        <img src="Images/Svg/catalog.svg" class="catalog__navigation-pic" alt="Гостинные">
+      <a href="#" class="catalog__navigation-link">Мягкая мебель</a>
+        <img src="Images/Svg/catalog.svg" class="catalog__navigation-pic" alt="Мягкая мебель">
+      <a href="" class="catalog__navigation-link">Диваны</a>
     </nav>
-
-    <div class="main__filter">
-      <span class="main__filter-text">Раздел</span>
-      <ul class="main__filter-list">
-        <li class="main__filter-item">Гостинные</li>
-        <li class="main__filter-item">Мягкая мебель</li>
-        <li class="main__filter-item">Диваны</li>
-      </ul>
-
-    <div class="main__filter-price">
-      <label for="price">Цена</label>
-       <input type="range" id="price" name="цена" min="2000" max="102000" step="1" value="2000">
-       <span class="main__filter-min">2000р</span>
-       <span class="main__filter-max">102000р</span>
-    </div>
-
-    <div class="main__checkbox">
-
-      <div class="main__checkbox-color">
-        <span class="main__checkbox-text">Цвет</span>
-        <form>
-         <input type="checkbox" name="red">
-         <input type="checkbox" checked name="green">
-         <input type="checkbox" name="white">
-         <input type="checkbox" name="black">
-         <input type="checkbox" name="grey">
-         <input type="checkbox" name="brown">
-        </form>
+  <div class="catalog__inner">
+    <div class="catalog__filter-inner">
+      <span class="catalog__filter-text">Раздел</span>
+      <div class="catalog__filter">
+        <ul class="catalog__filter-list">
+          <li class="catalog__filter-item">Гостинные</li>
+          <li class="catalog__filter-item">Мягкая мебель</li>
+          <li class="catalog__filter-item">Диваны</li>
+        </ul>
       </div>
 
-      <div class="main__checkbox-brand">
-        <span class="main__checkbox-text">Бренд</span>
-        <form>
-         <input type="checkbox" name="dins">Динс
-         <input type="checkbox" checked name="kusken">Кускен
-         <input type="checkbox" name="ebi">Эби
-         <input type="checkbox" name="reggio">Реджио
-         <input type="checkbox" name="sale">Сайле
-        </form>
-        <a href="#" class="main__checkbox-link">Показать еще</a>
+      <span class="range__text">Цена</span>
+      <div class="range__filter-price">
+          <div class="range__container">
+            <div class="range__controls">
+              <div class="range__select">
+                <span class="bar"></span>
+                  <img src="Images/Svg/Ellipse.svg" class="toggle-min--pic" alt="toggle">
+                  <img src="Images/Svg/Ellipse.svg" class="toggle-max--pic" alt="toggle">
+              </div>
+            </div>
+          </div>
+          <div class="range__price">
+            <input type="text" class="min-price" name="min-price" value="2 000 ₽">
+            <div class="range__price-between">—</div>
+            <input type="text" class="max-price" name="max-price" value="102 000 ₽ ">
+          </div>
       </div>
-    </div> <!-- main__filter-checkbox end-->
-    </div>  <!-- main__filter end-->
 
-    <section class="main__products products">
+      <div class="catalog__checkbox">
+        <span class="catalog__checkbox-text">Цвет</span>
+          <div class="checkbox__color">
+            <label class="check__color">
+              <input class="check__color-input" type="checkbox">
+                <span class="check_box check__box-red"></span>
+            </label>
+            <label class="check__color">
+              <input class="check__color-input" type="checkbox" checked>
+                <span class="check_box check__box-green"></span>
+            </label>
+            <label class="check__color">
+              <input class="check__color-input" type="checkbox">
+                <span class="check_box check__box-white"></span>
+            </label>
+            <label class="check__color">
+              <input class="check__color-input" type="checkbox">
+                <span class="check_box check__box-black"></span>
+            </label>
+            <label class="check__color">
+              <input class="check__color-input" type="checkbox">
+                <span class="check_box check__box-grey"></span>
+            </label>
+            <label class="check__color">
+              <input class="check__color-input" type="checkbox">
+                <span class="check_box check__box-brown"></span>
+            </label>
+          </div>
+      </div>
+
+      <div class="catalog__checkbox-brand">
+        <span class="catalog__checkbox-text">Бренд</span>
+        <div class="checkbox__brand">
+          <label class="check">
+            <input class="check__input" type="checkbox" name="dins">
+            <span class="chekbox__name"></span>
+            Динс
+          </label>
+          <label class="check">
+            <input class="check__input" type="checkbox" name="kusken" checked>
+            <span class="chekbox__name"></span>
+            Кускен
+          </label>
+          <label class="check">
+            <input class="check__input" type="checkbox" name="ebi">
+            <span class="chekbox__name"></span>
+            Эби
+          </label>
+          <label class="check">
+            <input class="check__input" type="checkbox" name="reggio">
+            <span class="chekbox__name"></span>
+            Реджио
+          </label>
+          <label class="check">
+            <input class="check__input" type="checkbox" name="sale">
+            <span class="chekbox__name"></span>
+            Сайле
+          </label>
+        </div>
+          <a href="#" class="catalog__checkbox-link">Показать еще</a>
+      </div>
+    </div> <!-- catalog__filter-inner end-->
+
+    <section class="main__products-catalog">
       <h2 class="main__products-title hidden">Хиты продаж</h2>
-      <ul class="main__products-list">
+      
+      <ul class="main__products-list main__products-list--catalog">
         <li class="products__item">
+          <svg class='catalog__products-like' width="19" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9.75 16l-.354.354a.5.5 0 00.708 0L9.75 
+            16zM2.294 8.544l-.353.354.353-.354zm6.25-6.25l-.353.354.353-.354zM9.75 
+            3.5l-.354.354a.5.5 0 00.708 0L9.75 3.5zm1.206-1.206l-.354-.353.354.353zm-.852 
+            13.352L2.648 8.191l-.707.707 7.455 7.456.708-.708zm6.748-7.455l-7.456 7.455.708.708 7.455-7.456-.707-.707zM8.191 
+            2.648l1.205 1.206.708-.708-1.206-1.205-.707.707zm1.913 1.206l1.205-1.206-.707-.707-1.206 1.205.708.708zM14.08.5a4.92 4.92 0 00-3.479 
+            1.44l.707.708A3.92 3.92 0 0114.081 1.5v-1zM18 5.42a3.92 3.92 0 01-1.148 2.77l.707.708A4.92 4.92 0 0019 5.419h-1zm1 0A4.92 4.92 0 0014.08.5v1A3.92 3.92 0 0118 
+            5.42h1zM5.42 1.5a3.92 3.92 0 012.77 1.148l.708-.707A4.92 
+            4.92 0 005.419.5v1zM1.5 5.42A3.92 3.92 0 015.42 1.5v-1A4.92 4.92 0 00.5 5.42h1zm1.148 2.77A3.92 3.92 0 011.5 5.42h-1a4.92 4.92 0 001.44 3.478l.708-.707z" 
+            fill="#000"/></svg>
           <a href="#"><img src="Images/Products/5.png" class="products__img" alt="Шерона Barhat Grey" width="200" height="150">
           <div class="products__descr">
             <h2 class="products__title">Шерона Barhat Grey</h2>
@@ -160,6 +243,16 @@
           </div></a>
         </li>
         <li class="products__item">
+          <svg class='catalog__products-like' width="19" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9.75 16l-.354.354a.5.5 0 00.708 0L9.75 
+            16zM2.294 8.544l-.353.354.353-.354zm6.25-6.25l-.353.354.353-.354zM9.75 
+            3.5l-.354.354a.5.5 0 00.708 0L9.75 3.5zm1.206-1.206l-.354-.353.354.353zm-.852 
+            13.352L2.648 8.191l-.707.707 7.455 7.456.708-.708zm6.748-7.455l-7.456 7.455.708.708 7.455-7.456-.707-.707zM8.191 
+            2.648l1.205 1.206.708-.708-1.206-1.205-.707.707zm1.913 1.206l1.205-1.206-.707-.707-1.206 1.205.708.708zM14.08.5a4.92 4.92 0 00-3.479 
+            1.44l.707.708A3.92 3.92 0 0114.081 1.5v-1zM18 5.42a3.92 3.92 0 01-1.148 2.77l.707.708A4.92 4.92 0 0019 5.419h-1zm1 0A4.92 4.92 0 0014.08.5v1A3.92 3.92 0 0118 
+            5.42h1zM5.42 1.5a3.92 3.92 0 012.77 1.148l.708-.707A4.92 
+            4.92 0 005.419.5v1zM1.5 5.42A3.92 3.92 0 015.42 1.5v-1A4.92 4.92 0 00.5 5.42h1zm1.148 2.77A3.92 3.92 0 011.5 5.42h-1a4.92 4.92 0 001.44 3.478l.708-.707z" 
+            fill="#000"/></svg>
           <a href="#"><img src="Images/Products/6.png" class="products__img" alt="Авиньон-1" width="200" height="150">
           <div class="products__descr">
             <h2 class="products__title">Авиньон-1</h2>
@@ -168,6 +261,16 @@
           </div></a>
         </li>
         <li class="products__item">
+          <svg class='catalog__products-like' width="19" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9.75 16l-.354.354a.5.5 0 00.708 0L9.75 
+            16zM2.294 8.544l-.353.354.353-.354zm6.25-6.25l-.353.354.353-.354zM9.75 
+            3.5l-.354.354a.5.5 0 00.708 0L9.75 3.5zm1.206-1.206l-.354-.353.354.353zm-.852 
+            13.352L2.648 8.191l-.707.707 7.455 7.456.708-.708zm6.748-7.455l-7.456 7.455.708.708 7.455-7.456-.707-.707zM8.191 
+            2.648l1.205 1.206.708-.708-1.206-1.205-.707.707zm1.913 1.206l1.205-1.206-.707-.707-1.206 1.205.708.708zM14.08.5a4.92 4.92 0 00-3.479 
+            1.44l.707.708A3.92 3.92 0 0114.081 1.5v-1zM18 5.42a3.92 3.92 0 01-1.148 2.77l.707.708A4.92 4.92 0 0019 5.419h-1zm1 0A4.92 4.92 0 0014.08.5v1A3.92 3.92 0 0118 
+            5.42h1zM5.42 1.5a3.92 3.92 0 012.77 1.148l.708-.707A4.92 
+            4.92 0 005.419.5v1zM1.5 5.42A3.92 3.92 0 015.42 1.5v-1A4.92 4.92 0 00.5 5.42h1zm1.148 2.77A3.92 3.92 0 011.5 5.42h-1a4.92 4.92 0 001.44 3.478l.708-.707z" 
+            fill="#000"/></svg>
           <a href="#"><img src="Images/Products/7.png" class="products__img" alt="Стелла Дуб Сонома" width="200" height="150">
           <div class="products__descr">
             <h2 class="products__title">Стелла Дуб Сонома</h2>
@@ -176,6 +279,16 @@
           </div></a>
         </li>
         <li class="products__item">
+          <svg class='catalog__products-like' width="19" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9.75 16l-.354.354a.5.5 0 00.708 0L9.75 
+            16zM2.294 8.544l-.353.354.353-.354zm6.25-6.25l-.353.354.353-.354zM9.75 
+            3.5l-.354.354a.5.5 0 00.708 0L9.75 3.5zm1.206-1.206l-.354-.353.354.353zm-.852 
+            13.352L2.648 8.191l-.707.707 7.455 7.456.708-.708zm6.748-7.455l-7.456 7.455.708.708 7.455-7.456-.707-.707zM8.191 
+            2.648l1.205 1.206.708-.708-1.206-1.205-.707.707zm1.913 1.206l1.205-1.206-.707-.707-1.206 1.205.708.708zM14.08.5a4.92 4.92 0 00-3.479 
+            1.44l.707.708A3.92 3.92 0 0114.081 1.5v-1zM18 5.42a3.92 3.92 0 01-1.148 2.77l.707.708A4.92 4.92 0 0019 5.419h-1zm1 0A4.92 4.92 0 0014.08.5v1A3.92 3.92 0 0118 
+            5.42h1zM5.42 1.5a3.92 3.92 0 012.77 1.148l.708-.707A4.92 
+            4.92 0 005.419.5v1zM1.5 5.42A3.92 3.92 0 015.42 1.5v-1A4.92 4.92 0 00.5 5.42h1zm1.148 2.77A3.92 3.92 0 011.5 5.42h-1a4.92 4.92 0 001.44 3.478l.708-.707z" 
+            fill="#000"/></svg>
           <a href="#"><img src="Images/Products/9.png" class="products__img" alt="Бенфлит Grey" width="200" height="150">
           <div class="products__descr">
             <h2 class="products__title">Бенфлит Grey</h2>
@@ -184,6 +297,16 @@
           </div></a>
         </li>
         <li class="products__item">
+          <svg class='catalog__products-like' width="19" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9.75 16l-.354.354a.5.5 0 00.708 0L9.75 
+            16zM2.294 8.544l-.353.354.353-.354zm6.25-6.25l-.353.354.353-.354zM9.75 
+            3.5l-.354.354a.5.5 0 00.708 0L9.75 3.5zm1.206-1.206l-.354-.353.354.353zm-.852 
+            13.352L2.648 8.191l-.707.707 7.455 7.456.708-.708zm6.748-7.455l-7.456 7.455.708.708 7.455-7.456-.707-.707zM8.191 
+            2.648l1.205 1.206.708-.708-1.206-1.205-.707.707zm1.913 1.206l1.205-1.206-.707-.707-1.206 1.205.708.708zM14.08.5a4.92 4.92 0 00-3.479 
+            1.44l.707.708A3.92 3.92 0 0114.081 1.5v-1zM18 5.42a3.92 3.92 0 01-1.148 2.77l.707.708A4.92 4.92 0 0019 5.419h-1zm1 0A4.92 4.92 0 0014.08.5v1A3.92 3.92 0 0118 
+            5.42h1zM5.42 1.5a3.92 3.92 0 012.77 1.148l.708-.707A4.92 
+            4.92 0 005.419.5v1zM1.5 5.42A3.92 3.92 0 015.42 1.5v-1A4.92 4.92 0 00.5 5.42h1zm1.148 2.77A3.92 3.92 0 011.5 5.42h-1a4.92 4.92 0 001.44 3.478l.708-.707z" 
+            fill="#000"/></svg>
           <a href="#"><img src="Images/Products/10.png" class="products__img" alt="Тиффани Вудлайн Крем" width="200" height="150">
           <div class="products__descr">
             <h2 class="products__title">Тиффани Вудлайн Крем</h2>
@@ -192,6 +315,16 @@
           </div></a>
         </li>
         <li class="products__item">
+          <svg class='catalog__products-like' width="19" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9.75 16l-.354.354a.5.5 0 00.708 0L9.75 
+            16zM2.294 8.544l-.353.354.353-.354zm6.25-6.25l-.353.354.353-.354zM9.75 
+            3.5l-.354.354a.5.5 0 00.708 0L9.75 3.5zm1.206-1.206l-.354-.353.354.353zm-.852 
+            13.352L2.648 8.191l-.707.707 7.455 7.456.708-.708zm6.748-7.455l-7.456 7.455.708.708 7.455-7.456-.707-.707zM8.191 
+            2.648l1.205 1.206.708-.708-1.206-1.205-.707.707zm1.913 1.206l1.205-1.206-.707-.707-1.206 1.205.708.708zM14.08.5a4.92 4.92 0 00-3.479 
+            1.44l.707.708A3.92 3.92 0 0114.081 1.5v-1zM18 5.42a3.92 3.92 0 01-1.148 2.77l.707.708A4.92 4.92 0 0019 5.419h-1zm1 0A4.92 4.92 0 0014.08.5v1A3.92 3.92 0 0118 
+            5.42h1zM5.42 1.5a3.92 3.92 0 012.77 1.148l.708-.707A4.92 
+            4.92 0 005.419.5v1zM1.5 5.42A3.92 3.92 0 015.42 1.5v-1A4.92 4.92 0 00.5 5.42h1zm1.148 2.77A3.92 3.92 0 011.5 5.42h-1a4.92 4.92 0 001.44 3.478l.708-.707z" 
+            fill="#000"/></svg>
           <a href="#"><img src="Images/Products/11.png" class="products__img" alt="Валенсия Beige" width="200" height="150">
           <div class="products__descr">
             <h2 class="products__title">Валенсия Beige</h2>
@@ -200,6 +333,16 @@
           </div></a>
         </li>
         <li class="products__item">
+          <svg class='catalog__products-like' width="19" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9.75 16l-.354.354a.5.5 0 00.708 0L9.75 
+            16zM2.294 8.544l-.353.354.353-.354zm6.25-6.25l-.353.354.353-.354zM9.75 
+            3.5l-.354.354a.5.5 0 00.708 0L9.75 3.5zm1.206-1.206l-.354-.353.354.353zm-.852 
+            13.352L2.648 8.191l-.707.707 7.455 7.456.708-.708zm6.748-7.455l-7.456 7.455.708.708 7.455-7.456-.707-.707zM8.191 
+            2.648l1.205 1.206.708-.708-1.206-1.205-.707.707zm1.913 1.206l1.205-1.206-.707-.707-1.206 1.205.708.708zM14.08.5a4.92 4.92 0 00-3.479 
+            1.44l.707.708A3.92 3.92 0 0114.081 1.5v-1zM18 5.42a3.92 3.92 0 01-1.148 2.77l.707.708A4.92 4.92 0 0019 5.419h-1zm1 0A4.92 4.92 0 0014.08.5v1A3.92 3.92 0 0118 
+            5.42h1zM5.42 1.5a3.92 3.92 0 012.77 1.148l.708-.707A4.92 
+            4.92 0 005.419.5v1zM1.5 5.42A3.92 3.92 0 015.42 1.5v-1A4.92 4.92 0 00.5 5.42h1zm1.148 2.77A3.92 3.92 0 011.5 5.42h-1a4.92 4.92 0 001.44 3.478l.708-.707z" 
+            fill="#000"/></svg>
           <a href="#"><img src="Images/Products/13.png" class="products__img" alt="Вилли Pink" width="200" height="150">
           <div class="products__descr">
             <h2 class="products__title">Вилли Pink</h2>
@@ -208,6 +351,16 @@
           </div></a>
         </li>
         <li class="products__item">
+          <svg class='catalog__products-like' width="19" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9.75 16l-.354.354a.5.5 0 00.708 0L9.75 
+            16zM2.294 8.544l-.353.354.353-.354zm6.25-6.25l-.353.354.353-.354zM9.75 
+            3.5l-.354.354a.5.5 0 00.708 0L9.75 3.5zm1.206-1.206l-.354-.353.354.353zm-.852 
+            13.352L2.648 8.191l-.707.707 7.455 7.456.708-.708zm6.748-7.455l-7.456 7.455.708.708 7.455-7.456-.707-.707zM8.191 
+            2.648l1.205 1.206.708-.708-1.206-1.205-.707.707zm1.913 1.206l1.205-1.206-.707-.707-1.206 1.205.708.708zM14.08.5a4.92 4.92 0 00-3.479 
+            1.44l.707.708A3.92 3.92 0 0114.081 1.5v-1zM18 5.42a3.92 3.92 0 01-1.148 2.77l.707.708A4.92 4.92 0 0019 5.419h-1zm1 0A4.92 4.92 0 0014.08.5v1A3.92 3.92 0 0118 
+            5.42h1zM5.42 1.5a3.92 3.92 0 012.77 1.148l.708-.707A4.92 
+            4.92 0 005.419.5v1zM1.5 5.42A3.92 3.92 0 015.42 1.5v-1A4.92 4.92 0 00.5 5.42h1zm1.148 2.77A3.92 3.92 0 011.5 5.42h-1a4.92 4.92 0 001.44 3.478l.708-.707z" 
+            fill="#000"/></svg>
           <a href="#"><img src="Images/Products/14.png" class="products__img" alt="Сан-Паулу Velvet Brown" width="200" height="150">
           <div class="products__descr">
             <h2 class="products__title">Сан-Паулу Velvet Brown</h2>
@@ -216,6 +369,16 @@
           </div></a>
         </li>
         <li class="products__item">
+          <svg class='catalog__products-like' width="19" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9.75 16l-.354.354a.5.5 0 00.708 0L9.75 
+            16zM2.294 8.544l-.353.354.353-.354zm6.25-6.25l-.353.354.353-.354zM9.75 
+            3.5l-.354.354a.5.5 0 00.708 0L9.75 3.5zm1.206-1.206l-.354-.353.354.353zm-.852 
+            13.352L2.648 8.191l-.707.707 7.455 7.456.708-.708zm6.748-7.455l-7.456 7.455.708.708 7.455-7.456-.707-.707zM8.191 
+            2.648l1.205 1.206.708-.708-1.206-1.205-.707.707zm1.913 1.206l1.205-1.206-.707-.707-1.206 1.205.708.708zM14.08.5a4.92 4.92 0 00-3.479 
+            1.44l.707.708A3.92 3.92 0 0114.081 1.5v-1zM18 5.42a3.92 3.92 0 01-1.148 2.77l.707.708A4.92 4.92 0 0019 5.419h-1zm1 0A4.92 4.92 0 0014.08.5v1A3.92 3.92 0 0118 
+            5.42h1zM5.42 1.5a3.92 3.92 0 012.77 1.148l.708-.707A4.92 
+            4.92 0 005.419.5v1zM1.5 5.42A3.92 3.92 0 015.42 1.5v-1A4.92 4.92 0 00.5 5.42h1zm1.148 2.77A3.92 3.92 0 011.5 5.42h-1a4.92 4.92 0 001.44 3.478l.708-.707z" 
+            fill="#000"/></svg>
           <a href="#"><img src="Images/Products/15.png" class="products__img" alt="Валенсия Beige" width="200" height="150">
           <div class="products__descr">
             <h2 class="products__title">Валенсия Beige</h2>
@@ -224,6 +387,16 @@
           </div></a>
         </li>
         <li class="products__item">
+          <svg class='catalog__products-like' width="19" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9.75 16l-.354.354a.5.5 0 00.708 0L9.75 
+            16zM2.294 8.544l-.353.354.353-.354zm6.25-6.25l-.353.354.353-.354zM9.75 
+            3.5l-.354.354a.5.5 0 00.708 0L9.75 3.5zm1.206-1.206l-.354-.353.354.353zm-.852 
+            13.352L2.648 8.191l-.707.707 7.455 7.456.708-.708zm6.748-7.455l-7.456 7.455.708.708 7.455-7.456-.707-.707zM8.191 
+            2.648l1.205 1.206.708-.708-1.206-1.205-.707.707zm1.913 1.206l1.205-1.206-.707-.707-1.206 1.205.708.708zM14.08.5a4.92 4.92 0 00-3.479 
+            1.44l.707.708A3.92 3.92 0 0114.081 1.5v-1zM18 5.42a3.92 3.92 0 01-1.148 2.77l.707.708A4.92 4.92 0 0019 5.419h-1zm1 0A4.92 4.92 0 0014.08.5v1A3.92 3.92 0 0118 
+            5.42h1zM5.42 1.5a3.92 3.92 0 012.77 1.148l.708-.707A4.92 
+            4.92 0 005.419.5v1zM1.5 5.42A3.92 3.92 0 015.42 1.5v-1A4.92 4.92 0 00.5 5.42h1zm1.148 2.77A3.92 3.92 0 011.5 5.42h-1a4.92 4.92 0 001.44 3.478l.708-.707z" 
+            fill="#000"/></svg>
           <a href="#"><img src="Images/Products/5.png" class="products__img" alt="Шерона Barhat Grey" width="200" height="150">
           <div class="products__descr">
             <h2 class="products__title">Шерона Barhat Grey</h2>
@@ -232,6 +405,16 @@
           </div></a>
         </li>
         <li class="products__item">
+          <svg class='catalog__products-like' width="19" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9.75 16l-.354.354a.5.5 0 00.708 0L9.75 
+            16zM2.294 8.544l-.353.354.353-.354zm6.25-6.25l-.353.354.353-.354zM9.75 
+            3.5l-.354.354a.5.5 0 00.708 0L9.75 3.5zm1.206-1.206l-.354-.353.354.353zm-.852 
+            13.352L2.648 8.191l-.707.707 7.455 7.456.708-.708zm6.748-7.455l-7.456 7.455.708.708 7.455-7.456-.707-.707zM8.191 
+            2.648l1.205 1.206.708-.708-1.206-1.205-.707.707zm1.913 1.206l1.205-1.206-.707-.707-1.206 1.205.708.708zM14.08.5a4.92 4.92 0 00-3.479 
+            1.44l.707.708A3.92 3.92 0 0114.081 1.5v-1zM18 5.42a3.92 3.92 0 01-1.148 2.77l.707.708A4.92 4.92 0 0019 5.419h-1zm1 0A4.92 4.92 0 0014.08.5v1A3.92 3.92 0 0118 
+            5.42h1zM5.42 1.5a3.92 3.92 0 012.77 1.148l.708-.707A4.92 
+            4.92 0 005.419.5v1zM1.5 5.42A3.92 3.92 0 015.42 1.5v-1A4.92 4.92 0 00.5 5.42h1zm1.148 2.77A3.92 3.92 0 011.5 5.42h-1a4.92 4.92 0 001.44 3.478l.708-.707z" 
+            fill="#000"/></svg>
           <a href="#"><img src="Images/Products/6.png" class="products__img" alt="Авиньон-1" width="200" height="150">
           <div class="products__descr">
             <h2 class="products__title">Авиньон-1</h2>
@@ -240,6 +423,16 @@
           </div></a>
         </li>
         <li class="products__item">
+          <svg class='catalog__products-like' width="19" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9.75 16l-.354.354a.5.5 0 00.708 0L9.75 
+            16zM2.294 8.544l-.353.354.353-.354zm6.25-6.25l-.353.354.353-.354zM9.75 
+            3.5l-.354.354a.5.5 0 00.708 0L9.75 3.5zm1.206-1.206l-.354-.353.354.353zm-.852 
+            13.352L2.648 8.191l-.707.707 7.455 7.456.708-.708zm6.748-7.455l-7.456 7.455.708.708 7.455-7.456-.707-.707zM8.191 
+            2.648l1.205 1.206.708-.708-1.206-1.205-.707.707zm1.913 1.206l1.205-1.206-.707-.707-1.206 1.205.708.708zM14.08.5a4.92 4.92 0 00-3.479 
+            1.44l.707.708A3.92 3.92 0 0114.081 1.5v-1zM18 5.42a3.92 3.92 0 01-1.148 2.77l.707.708A4.92 4.92 0 0019 5.419h-1zm1 0A4.92 4.92 0 0014.08.5v1A3.92 3.92 0 0118 
+            5.42h1zM5.42 1.5a3.92 3.92 0 012.77 1.148l.708-.707A4.92 
+            4.92 0 005.419.5v1zM1.5 5.42A3.92 3.92 0 015.42 1.5v-1A4.92 4.92 0 00.5 5.42h1zm1.148 2.77A3.92 3.92 0 011.5 5.42h-1a4.92 4.92 0 001.44 3.478l.708-.707z" 
+            fill="#000"/></svg>
           <a href="#"><img src="Images/Products/7.png" class="products__img" alt="Стелла Дуб Сонома" width="200" height="150">
           <div class="products__descr">
             <h2 class="products__title">Стелла Дуб Сонома</h2>
@@ -248,6 +441,16 @@
           </div></a>
         </li>
         <li class="products__item">
+          <svg class='catalog__products-like' width="19" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9.75 16l-.354.354a.5.5 0 00.708 0L9.75 
+            16zM2.294 8.544l-.353.354.353-.354zm6.25-6.25l-.353.354.353-.354zM9.75 
+            3.5l-.354.354a.5.5 0 00.708 0L9.75 3.5zm1.206-1.206l-.354-.353.354.353zm-.852 
+            13.352L2.648 8.191l-.707.707 7.455 7.456.708-.708zm6.748-7.455l-7.456 7.455.708.708 7.455-7.456-.707-.707zM8.191 
+            2.648l1.205 1.206.708-.708-1.206-1.205-.707.707zm1.913 1.206l1.205-1.206-.707-.707-1.206 1.205.708.708zM14.08.5a4.92 4.92 0 00-3.479 
+            1.44l.707.708A3.92 3.92 0 0114.081 1.5v-1zM18 5.42a3.92 3.92 0 01-1.148 2.77l.707.708A4.92 4.92 0 0019 5.419h-1zm1 0A4.92 4.92 0 0014.08.5v1A3.92 3.92 0 0118 
+            5.42h1zM5.42 1.5a3.92 3.92 0 012.77 1.148l.708-.707A4.92 
+            4.92 0 005.419.5v1zM1.5 5.42A3.92 3.92 0 015.42 1.5v-1A4.92 4.92 0 00.5 5.42h1zm1.148 2.77A3.92 3.92 0 011.5 5.42h-1a4.92 4.92 0 001.44 3.478l.708-.707z" 
+            fill="#000"/></svg>
           <a href="#"><img src="Images/Products/9.png" class="products__img" alt="Бенфлит Grey" width="200" height="150">
           <div class="products__descr">
             <h2 class="products__title">Бенфлит Grey</h2>
@@ -256,14 +459,34 @@
           </div></a>
         </li>
         <li class="products__item">
+          <svg class='catalog__products-like' width="19" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9.75 16l-.354.354a.5.5 0 00.708 0L9.75 
+            16zM2.294 8.544l-.353.354.353-.354zm6.25-6.25l-.353.354.353-.354zM9.75 
+            3.5l-.354.354a.5.5 0 00.708 0L9.75 3.5zm1.206-1.206l-.354-.353.354.353zm-.852 
+            13.352L2.648 8.191l-.707.707 7.455 7.456.708-.708zm6.748-7.455l-7.456 7.455.708.708 7.455-7.456-.707-.707zM8.191 
+            2.648l1.205 1.206.708-.708-1.206-1.205-.707.707zm1.913 1.206l1.205-1.206-.707-.707-1.206 1.205.708.708zM14.08.5a4.92 4.92 0 00-3.479 
+            1.44l.707.708A3.92 3.92 0 0114.081 1.5v-1zM18 5.42a3.92 3.92 0 01-1.148 2.77l.707.708A4.92 4.92 0 0019 5.419h-1zm1 0A4.92 4.92 0 0014.08.5v1A3.92 3.92 0 0118 
+            5.42h1zM5.42 1.5a3.92 3.92 0 012.77 1.148l.708-.707A4.92 
+            4.92 0 005.419.5v1zM1.5 5.42A3.92 3.92 0 015.42 1.5v-1A4.92 4.92 0 00.5 5.42h1zm1.148 2.77A3.92 3.92 0 011.5 5.42h-1a4.92 4.92 0 001.44 3.478l.708-.707z" 
+            fill="#000"/></svg>
           <a href="#"><img src="Images/Products/10.png" class="products__img" alt="Тиффани Вудлайн Крем" width="200" height="150">
           <div class="products__descr">
-            <h2 class="productproductsitle">Тиффани Вудлайн Крем</h2>
+            <h2 class="products__title">Тиффани Вудлайн Крем</h2>
             <span class="products__text">Письменные столы</span>
             <span class="products__price">10 990₽</span>
           </div></a>
         </li>
         <li class="products__item">
+          <svg class='catalog__products-like' width="19" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9.75 16l-.354.354a.5.5 0 00.708 0L9.75 
+            16zM2.294 8.544l-.353.354.353-.354zm6.25-6.25l-.353.354.353-.354zM9.75 
+            3.5l-.354.354a.5.5 0 00.708 0L9.75 3.5zm1.206-1.206l-.354-.353.354.353zm-.852 
+            13.352L2.648 8.191l-.707.707 7.455 7.456.708-.708zm6.748-7.455l-7.456 7.455.708.708 7.455-7.456-.707-.707zM8.191 
+            2.648l1.205 1.206.708-.708-1.206-1.205-.707.707zm1.913 1.206l1.205-1.206-.707-.707-1.206 1.205.708.708zM14.08.5a4.92 4.92 0 00-3.479 
+            1.44l.707.708A3.92 3.92 0 0114.081 1.5v-1zM18 5.42a3.92 3.92 0 01-1.148 2.77l.707.708A4.92 4.92 0 0019 5.419h-1zm1 0A4.92 4.92 0 0014.08.5v1A3.92 3.92 0 0118 
+            5.42h1zM5.42 1.5a3.92 3.92 0 012.77 1.148l.708-.707A4.92 
+            4.92 0 005.419.5v1zM1.5 5.42A3.92 3.92 0 015.42 1.5v-1A4.92 4.92 0 00.5 5.42h1zm1.148 2.77A3.92 3.92 0 011.5 5.42h-1a4.92 4.92 0 001.44 3.478l.708-.707z" 
+            fill="#000"/></svg>
           <a href="#"><img src="Images/Products/11.png" class="products__img" alt="Валенсия Beige" width="200" height="150">
           <div class="products__descr">
             <h2 class="products__title">Валенсия Beige</h2>
@@ -272,6 +495,16 @@
           </div></a>
         </li>
         <li class="products__item">
+          <svg class='catalog__products-like' width="19" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9.75 16l-.354.354a.5.5 0 00.708 0L9.75 
+            16zM2.294 8.544l-.353.354.353-.354zm6.25-6.25l-.353.354.353-.354zM9.75 
+            3.5l-.354.354a.5.5 0 00.708 0L9.75 3.5zm1.206-1.206l-.354-.353.354.353zm-.852 
+            13.352L2.648 8.191l-.707.707 7.455 7.456.708-.708zm6.748-7.455l-7.456 7.455.708.708 7.455-7.456-.707-.707zM8.191 
+            2.648l1.205 1.206.708-.708-1.206-1.205-.707.707zm1.913 1.206l1.205-1.206-.707-.707-1.206 1.205.708.708zM14.08.5a4.92 4.92 0 00-3.479 
+            1.44l.707.708A3.92 3.92 0 0114.081 1.5v-1zM18 5.42a3.92 3.92 0 01-1.148 2.77l.707.708A4.92 4.92 0 0019 5.419h-1zm1 0A4.92 4.92 0 0014.08.5v1A3.92 3.92 0 0118 
+            5.42h1zM5.42 1.5a3.92 3.92 0 012.77 1.148l.708-.707A4.92 
+            4.92 0 005.419.5v1zM1.5 5.42A3.92 3.92 0 015.42 1.5v-1A4.92 4.92 0 00.5 5.42h1zm1.148 2.77A3.92 3.92 0 011.5 5.42h-1a4.92 4.92 0 001.44 3.478l.708-.707z" 
+            fill="#000"/></svg>
           <a href="#"><img src="Images/Products/13.png" class="products__img" alt="Вилли Pink" width="200" height="150">
           <div class="products__descr">
             <h2 class="products__title">Вилли Pink</h2>
@@ -280,6 +513,16 @@
           </div></a>
         </li>
         <li class="products__item">
+          <svg class='catalog__products-like' width="19" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9.75 16l-.354.354a.5.5 0 00.708 0L9.75 
+            16zM2.294 8.544l-.353.354.353-.354zm6.25-6.25l-.353.354.353-.354zM9.75 
+            3.5l-.354.354a.5.5 0 00.708 0L9.75 3.5zm1.206-1.206l-.354-.353.354.353zm-.852 
+            13.352L2.648 8.191l-.707.707 7.455 7.456.708-.708zm6.748-7.455l-7.456 7.455.708.708 7.455-7.456-.707-.707zM8.191 
+            2.648l1.205 1.206.708-.708-1.206-1.205-.707.707zm1.913 1.206l1.205-1.206-.707-.707-1.206 1.205.708.708zM14.08.5a4.92 4.92 0 00-3.479 
+            1.44l.707.708A3.92 3.92 0 0114.081 1.5v-1zM18 5.42a3.92 3.92 0 01-1.148 2.77l.707.708A4.92 4.92 0 0019 5.419h-1zm1 0A4.92 4.92 0 0014.08.5v1A3.92 3.92 0 0118 
+            5.42h1zM5.42 1.5a3.92 3.92 0 012.77 1.148l.708-.707A4.92 
+            4.92 0 005.419.5v1zM1.5 5.42A3.92 3.92 0 015.42 1.5v-1A4.92 4.92 0 00.5 5.42h1zm1.148 2.77A3.92 3.92 0 011.5 5.42h-1a4.92 4.92 0 001.44 3.478l.708-.707z" 
+            fill="#000"/></svg>
           <a href="#"><img src="Images/Products/14.png" class="products__img" alt="Сан-Паулу Velvet Brown" width="200" height="150">
           <div class="products__descr">
             <h2 class="products__title">Сан-Паулу Velvet Brown</h2>
@@ -288,6 +531,16 @@
           </div></a>
         </li>
         <li class="products__item">
+          <svg class='catalog__products-like' width="19" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9.75 16l-.354.354a.5.5 0 00.708 0L9.75 
+            16zM2.294 8.544l-.353.354.353-.354zm6.25-6.25l-.353.354.353-.354zM9.75 
+            3.5l-.354.354a.5.5 0 00.708 0L9.75 3.5zm1.206-1.206l-.354-.353.354.353zm-.852 
+            13.352L2.648 8.191l-.707.707 7.455 7.456.708-.708zm6.748-7.455l-7.456 7.455.708.708 7.455-7.456-.707-.707zM8.191 
+            2.648l1.205 1.206.708-.708-1.206-1.205-.707.707zm1.913 1.206l1.205-1.206-.707-.707-1.206 1.205.708.708zM14.08.5a4.92 4.92 0 00-3.479 
+            1.44l.707.708A3.92 3.92 0 0114.081 1.5v-1zM18 5.42a3.92 3.92 0 01-1.148 2.77l.707.708A4.92 4.92 0 0019 5.419h-1zm1 0A4.92 4.92 0 0014.08.5v1A3.92 3.92 0 0118 
+            5.42h1zM5.42 1.5a3.92 3.92 0 012.77 1.148l.708-.707A4.92 
+            4.92 0 005.419.5v1zM1.5 5.42A3.92 3.92 0 015.42 1.5v-1A4.92 4.92 0 00.5 5.42h1zm1.148 2.77A3.92 3.92 0 011.5 5.42h-1a4.92 4.92 0 001.44 3.478l.708-.707z" 
+            fill="#000"/></svg>
           <a href="#"><img src="Images/Products/15.png" class="products__img" alt="Валенсия Beige" width="200" height="150">
           <div class="products__descr">
             <h2 class="products__title">Валенсия Beige</h2>
@@ -297,55 +550,55 @@
         </li>
       </ul>
     </section>  <!-- main__products products end -->
-
+  </div>
   </main>
-  </div>    <!-- wrapper end -->
+  
   <footer class="page__footer footer">
+    <h3 class="footer__title">Навигация</h3>
+
     <div class="footer__nav">
-      <h3 class="footer__title">Навигация</h3>
-
-      <ul class="footer__list">
-        <li><a class="footer__link" href="#">Кухни</a></li>
-        <li><a class="footer__link" href="#">Спальни</a></li>
-        <li><a class="footer__link" href="#">Гостинные</a></li>
+      
+      <ul class="footer__nav-list">
+        <li><a class="footer__nav-link" href="#">Кухни</a></li>
+        <li><a class="footer__nav-link" href="#">Спальни</a></li>
+        <li><a class="footer__nav-link" href="#">Гостинные</a></li>
       </ul>
 
-      <ul class="footer__list">
-        <li><a class="footer__link" href="#">Прихожие</a></li>
-        <li><a class="footer__link" href="#">Офисная мебель</a></li>
-        <li><a class="footer__link" href="#">Детская</a></li>
+      <ul class="footer__nav-list">
+        <li><a class="footer__nav-link" href="#">Прихожие</a></li>
+        <li><a class="footer__nav-link" href="#">Офисная мебель</a></li>
+        <li><a class="footer__nav-link" href="#">Детская</a></li>
       </ul>
 
-      <ul class="footer__list">
-        <li><a class="footer__link" href="#">Шкафы</a></li>
-        <li><a class="footer__link" href="#">Матрасы</a></li>
-        <li><a class="footer__link" href="#">Мягкая мебель</a></li>
+      <ul class="footer__nav-list">
+        <li><a class="footer__nav-link" href="#">Шкафы</a></li>
+        <li><a class="footer__nav-link" href="#">Матрасы</a></li>
+        <li><a class="footer__nav-link" href="#">Мягкая мебель</a></li>
       </ul>
-
-      <ul class="footer__list">
-        <li><a class="footer__link" href="#">Акция</a></li>
-        <li><a class="footer__link" href="#">Новинки</a></li>
-      </ul>
-
-      <div class="footer__info">
-        <img src="Images/Logo/footer-logo.svg" alt="footer-logo">
-        <address class="footer__address">г. Анапа, Анапское шоссе,30 Ж/К Черное море
-        </address>
-        <ul class="footer__info-list">
-          <li>
-            <a href="tel:+79648999119" class="footer__tel-link">
-              <img src="Images/footer-img/phone.svg">8 (964) 89 99 119</a>
-          </li>
-          <li>
-            <a href="https://instagram.com" class="footer__insta-link">
-              <img src="Images/footer-img/inst.svg">INSTAGRAM</a>
-          </li>
-          <li><a href="mailto:loft_anapa@mail.ru" class="footer__mail-link">
-            <img src="Images/footer-img/mail.svg">mebel_loft_anapa@mail.ru</a>
-          </li>
-        </ul>
+      
+      <div class="footer__logo">
+        <span class="footer__info-logo">LM</span>
+        <p class="footer__address-value">г. Анапа, Анапское шоссе, 30 Ж/К Черное море</p>
       </div>
     </div>
+
+      <div class="footer__info">
+        <ul class="footer__info-menu">
+          <li><a class="footer__info-list footer__info-list--red" href="#">Акция</a></li>
+          <li><a class="footer__info-list" href="#">Новинки</a></li>
+        </ul>
+
+        <ul class="footer__info-contacts">
+          <li><a href="tel:+79648999119" class="footer__tel-link">
+            <img src="Images/footer-img/phone.svg" class="footer__insta-pic">8 (964) 89 99 119</a></li>
+          <li><a href="https://instagram.com" class="footer__insta-link">
+            <img src="Images/footer-img/inst.svg" class="footer__insta-pic">INSTAGRAM</a></li>
+          <li><a href="mailto:loft_anapa@mail.ru" class="footer__mail-link">
+            <img src="Images/footer-img/mail.svg" class="footer__insta-pic">mebel_loft_anapa@mail.ru</a></li>
+        </ul>
+      </div>
   </footer>
+</div>    <!-- wrapper end -->
+<script src="../app/js/app.min.js"></script>
 </body>
 </html>
