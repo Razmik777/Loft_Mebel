@@ -2,6 +2,7 @@
 
 const likeBtn = document.querySelectorAll('.main__products-like');
 const likeBtnCatalog = document.querySelectorAll('.catalog__products-like');
+const sliderLikeBtn = document.querySelector('.product__slider-like');
 
 likeBtn.forEach(function(item) {
     item.addEventListener('click', () =>
@@ -12,6 +13,10 @@ likeBtnCatalog.forEach(function(item) {
     item.addEventListener('click', () =>
         item.classList.toggle('catalog__products-like_clicked'));
 });
+
+sliderLikeBtn.addEventListener('click', () => {
+  sliderLikeBtn.classList.toggle('product__slider-like_clicked');
+})
 
 
 const swiper = new Swiper('.swiper', {

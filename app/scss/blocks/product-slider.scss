@@ -4,3 +4,43 @@
     display: flex;
 }
 
+.product__slider-inner {
+    display: flex;
+    align-items: center;
+}
+
+.product__slider-price {
+    display: block;
+    font-size:28px;
+    font-weight:$weightNorm;
+    line-height: 33px;
+    margin-right: 31px;
+}
+
+.product__slider-button {
+    background-color: #245462;
+    font-size: 13px;
+    line-height: 15px;
+    margin-right: 20px;
+    padding: 12px 50px;
+    color: #fff;
+}
+
+.product__slider-like {
+    margin-right: 11px;
+    cursor: pointer;
+
+    &_clicked {
+        cursor: pointer;
+        stroke-width: 10%;
+        stroke:red;
+        transition: .3s linear;
+      }
+}
+
+.product__slider-link {
+    font-size: 12px;
+    line-height: 14px;
+    color: $darkGrey;
+}
+
