@@ -1,0 +1,55 @@
+<<<<<<< HEAD:app/scss/blocks/product-slider.scss
+
+.product__slider-intro {
+    width: 100%;
+    display: flex;
+}
+
+.product__slider-inner {
+    display: flex;
+    align-items: center;
+}
+
+.product__slider-price {
+    display: block;
+    font-size:28px;
+    font-weight:$weightNorm;
+    line-height: 33px;
+    margin-right: 31px;
+}
+
+.product__slider-button {
+    background-color: #245462;
+    font-size: 13px;
+    line-height: 15px;
+    margin-right: 20px;
+    padding: 12px 50px;
+    color: #fff;
+}
+
+.product__slider-like {
+    margin-right: 11px;
+    cursor: pointer;
+
+    &_clicked {
+        cursor: pointer;
+        stroke-width: 10%;
+        stroke:red;
+        transition: .3s linear;
+      }
+}
+
+.product__slider-link {
+    font-size: 12px;
+    line-height: 14px;
+    color: $darkGrey;
+}
+
+=======
+
+.product__slider-intro {
+    width: 100%;
+    display: flex;
+}
+
+>>>>>>> 426d4cc999a3c477e253e3537cd5d370b79ef942:scss/blocks/product-slider.scss

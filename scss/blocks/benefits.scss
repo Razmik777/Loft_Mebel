@@ -1,0 +1,42 @@
+.benefits{
+    max-width: 1100px;
+    margin: 0 auto;
+    
+}
+
+.benefits__title{
+    font-family: $mainFontFamily;
+    font-size: 24px;
+    font-weight: $weight;
+    line-height: 28px;
+    text-align: center;
+    margin: 100px 0 90px;
+    color: $darkGrey;
+}
+
+.benefits__cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 164px;
+    row-gap: 80px;
+    margin-bottom: 95px;
+}
+
+.benefits__card{
+    position: relative;
+}
+
+.benefit__card-pic{
+    position: absolute;
+    top: 27px;
+    left: -95px;
+}
+
+.benefit__card-title{
+    @include Font($mainFontFamily, $fontSize, $lineHeight, $weight, $darkGrey);
+    margin-bottom: 10px;
+}
+
+.benefit__card-text{
+    @include Font($mainFontFamily, $navFontSize, $AboutLineHeight, $weight, $AboutPage);
+}
