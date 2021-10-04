@@ -1,0 +1,8 @@
+
+ @mixin Font($mainFontFamily, $mainFontSize, $mainLineHeight, $weight, $darkGrey) {
+    font-family: $mainFontFamily;
+    font-size: $mainFontSize;
+    line-height: $mainLineHeight;
+    font-weight: $weight;
+    color: $darkGrey;
+ }
