@@ -1,5 +1,3 @@
-<<<<<<< HEAD:app/js/app.js
-'use strict';
 
 const likeBtn = document.querySelectorAll('.main__products-like');
 const likeBtnCatalog = document.querySelectorAll('.catalog__products-like');
@@ -44,45 +42,3 @@ const swiperTab = new Swiper('.swiper__tab', {
   },
 });
   
-=======
-'use strict';
-
-const likeBtn = document.querySelectorAll('.main__products-like');
-const likeBtnCatalog = document.querySelectorAll('.catalog__products-like');
-
-likeBtn.forEach(function(item) {
-    item.addEventListener('click', () =>
-        item.classList.toggle('main__products-like_clicked'));
-});
-
-likeBtnCatalog.forEach(function(item) {
-    item.addEventListener('click', () =>
-        item.classList.toggle('catalog__products-like_clicked'));
-});
-
-
-const swiper = new Swiper('.swiper', {
-    // Optional parameters
-    direction: 'horizontal',
-    loop: true,
-  
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper__button--next',
-      prevEl: '.swiper__button--prev',
-    },
-});
-
-const swiperTab = new Swiper('.swiper__tab', {
-  // Optional parameters
-  direction: 'horizontal',
-  loop: true,
-
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper__button--next',
-    prevEl: '.swiper__button--prev',
-  },
-});
-  
->>>>>>> 426d4cc999a3c477e253e3537cd5d370b79ef942:js/app.js
